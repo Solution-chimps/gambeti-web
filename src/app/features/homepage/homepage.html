@@ -1,8 +1,121 @@
 <main>
-  <span class="material-symbols-outlined"> download </span>
-  <section></section>
-  <section></section>
-  <section></section>
+  <section>
+    <div class="main-content-wrapper">
+      <span>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i>
+        Engenharia de Segurança do Trabalho
+      </span>
+      <h1>
+        Laudos técnicos, inspeções e
+        <strong class="text-brand-secondary-500">treinamentos NR</strong> para sua empresa
+        <strong class="text-brand-secondary-500">em todo o Brasil</strong>
+      </h1>
+      <span
+        >A Gambeti Engenharia oferece soluções completas em segurança do trabalho: laudos NR13, NR10
+        e NR20, projetos de engenharia, treinamentos obrigatórios e gestão do eSocial SST — com
+        registro no CREA e emissão de ART.</span
+      >
+      <div class="buttons">
+          <button class="bg-brand-secondary-500">
+            <i class="fab fa-whatsapp"></i>
+            Solicitar Orçamento Gratuito
+          </button>
+
+          <button class="outline">
+            <i class="fas fa-arrow-down"></i>
+            Ver Serviços
+          </button>
+
+        <hr />
+
+        <ul>
+          <li>
+            <strong class="text-brand-secondary-500">NR01–NR39</strong>
+            <span>TREINAMENTOS</span>
+          </li>
+
+          <li>
+            <strong class="text-brand-secondary-500">CREA</strong>
+            <span>REGISTRO ATIVO</span>
+          </li>
+
+          <li>
+            <strong class="text-brand-secondary-500">Brasil</strong>
+            <span>ATUAÇÃO NACIONAL</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about-gambeti-engenharia">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-visual reveal visible">
+          <i class="fas fa-hard-hat about-visual-icon"></i>
+          <div class="crea-badge"><i class="fas fa-certificate"></i> CREA ATIVO</div>
+        </div>
+        <div class="about-body reveal visible">
+          <h2>Sobre a Gambeti Engenharia</h2>
+          <p>
+            A <strong>Gambeti Engenharia</strong> é uma empresa multidisciplinar especializada em
+            <strong>engenharia de segurança do trabalho</strong>, com atuação em todo o território
+            nacional. Nossa equipe é formada por engenheiros de segurança, mecânicos, eletricistas e
+            civis, todos com registro ativo no <strong>CREA</strong>.
+          </p>
+          <p>
+            Atuamos na elaboração de <strong>laudos técnicos</strong>,
+            <strong>inspeções periódicas</strong>, <strong>projetos de engenharia</strong>,
+            <strong>treinamentos em NRs</strong> e na <strong>gestão do eSocial SST</strong>. Todos
+            os nossos serviços são acompanhados de <strong>ART</strong>, assegurando a validade
+            legal.
+          </p>
+          <div class="about-checks">
+            @for (check of aboutChecks(); track check.id) {
+              <div class="about-check">
+                <i [class]="check.icon"></i>
+                {{ check.text }}
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section services" id="servicos-engenharia-seguranca-trabalho">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Serviços de Engenharia e Segurança do Trabalho</h2>
+        <div class="accent-bar"></div>
+        <p>
+          Soluções técnicas completas para manter sua empresa em total conformidade com as Normas
+          Regulamentadoras
+        </p>
+      </div>
+      <div class="services-grid">
+        @for (service of cards(); track service.title) {
+          <article class="svc-card reveal visible">
+            <div class="svc-icon">
+              <i [class]="service.icon"></i>
+            </div>
+
+            <h3>
+              {{ service.title }}
+            </h3>
+
+            <span class="svc-nr">
+              {{ service.tag }}
+            </span>
+
+            <p>
+              {{ service.description }}
+            </p>
+
+            <span class="svc-card-link"> Ver detalhes <i class="fas fa-arrow-right"></i> </span>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
   <section></section>
   <section></section>
 </main>

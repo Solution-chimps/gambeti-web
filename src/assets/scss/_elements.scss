@@ -10,8 +10,8 @@ input {
 }
 
 button {
-  min-height: 34px;
-  padding: 5px 10px;
+  min-height: 60px;
+  padding: 16px 32px;
   position: relative;
   top: -1px;
   border: 1px solid var(--ui-border-default);
@@ -22,10 +22,23 @@ button {
   cursor: pointer;
   transition: 0.1s all;
 
+  &[class^="bg-brand-secondary"] {
+    color: var(--gb-brand-primary-900);
+  }
+
+  &.outline {
+    border: 2px solid rgba(var(--gb-border-strong-rgb), var(--ui-opacity, 0.4)) !important
+  }
+
   &:active {
     top: 0px;
     box-shadow: 0px 0px var(--ui-brand-primary-600);
   }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .row[title] {
@@ -40,6 +53,21 @@ button {
     padding-bottom: 5px;
   }
 
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.25;
 }
 
 ul {
@@ -93,6 +121,15 @@ table {
       }
     }
   }
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
 }
 
 /* =========================================

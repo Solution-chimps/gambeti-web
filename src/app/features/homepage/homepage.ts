@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+
+import { ABOUT_CHECKS } from '../../core/constants/about-checks.constants';
+import { SERVICE_CARDS } from '../../core/constants/service-cards.constants';
 
 @Component({
   selector: 'gb-homepage',
@@ -7,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './homepage.scss',
 })
 export class Homepage {
+
+  public readonly cards = signal(SERVICE_CARDS);
+  public readonly aboutChecks = signal(ABOUT_CHECKS);
 
 }

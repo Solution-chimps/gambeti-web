@@ -4,139 +4,114 @@ $dark-tokens: (
   /* =========================================
     BRAND
   ========================================= */
-  brand: (primary: (50: #E8EDF4,
-      100: #C6D2E3,
-      200: #9FB4CF,
-      300: #7896BB,
-      400: #5B7FA9,
-      500: #1F3A5A, // azul principal
-      600: #1A314C,
-      700: #16283E,
-      800: #111F30,
-      900: #0B1623,
-    ),
+  brand: (primary: (50: #EEF2F8,
+      100: #D6DFEC,
+      200: #B7C7DF,
+      300: #98AFD1,
+      400: #6C8DB8,
+      500: #1A3560, // primary-light
+      600: #0F2240, // primary-mid
+      700: #0A1628, // primary
+      800: #070F1C,
+      900: #04080F),
 
-    secondary: (50: #FFF4DB,
-      100: #FFE6A8,
-      200: #FFD977,
-      300: #FFCB46,
-      400: #FFBD1F,
-      500: #F4A000, // amarelo CTA
-      600: #DB8F00,
-      700: #B87600,
-      800: #8F5B00,
-      900: #5F3C00,
-    )),
+    secondary: (50: #FFF6E5,
+      100: #FFE9BF,
+      200: #FFD68A,
+      300: #FFC353,
+      400: #FFB62E,
+      500: #F59E0B, // accent
+      600: #D97706, // accent-hover
+      700: #B45309,
+      800: #8A3E06,
+      900: #5C2A04)),
 
   /* =========================================
     FEEDBACK
   ========================================= */
-  feedback: (success: (500: #3FA76A,
-      600: #2F8E58,
-    ),
+  feedback: (success: (500: #10B981,
+      600: color.scale(#10B981, $lightness: -10%)),
 
-    warning: (500: #F0B429,
-      600: #D89F1E,
-    ),
+    warning: (500: #F59E0B,
+      600: #D97706),
 
-    danger: (500: #D95C5C,
-      600: #B84A4A,
-    ),
+    danger: (500: #EF4444,
+      600: #DC2626),
 
-    info: (500: #3A7BD5,
-      600: #2E64B0,
-    )),
+    info: (500: #3B82F6,
+      600: #2563EB)),
 
   /* =========================================
     GRAY SCALE
   ========================================= */
-  gray: (50: #F8F9FB,
-    100: #EEF1F5,
-    200: #E2E7EE,
-    300: #D2D9E2,
-    400: #B8C2CF,
-    500: #9AA6B6,
-    600: #7C8796,
-    700: #5F6977,
-    800: #3F4752,
-    900: #262C33,
-  ),
+  gray: (50: #F8FAFC,
+    100: #F1F5F9,
+    200: #E2E8F0,
+    300: #CBD5E1,
+    400: #94A3B8,
+    500: #64748B,
+    600: #475569,
+    700: #334155,
+    800: #1E293B,
+    900: #0F172A),
 
   /* =========================================
     SURFACE
   ========================================= */
-  surface: (body: #F4F6F9,
+  surface: (body: #F8FAFC,
     base: #FFFFFF,
-    alt: #F0F3F7,
+    alt: #F1F5F9,
     elevated: #FFFFFF,
-    dark: #0F223A,
-  ),
+    dark: #0A1628),
 
   /* =========================================
     TEXT
   ========================================= */
-  text: (primary: #0F1720,
-    secondary: #334155,
+  text: (primary: #1E293B,
+    secondary: #475569,
     muted: #64748B,
     inverse: #FFFFFF,
-    disabled: #94A3B8,
-  ),
+    disabled: #94A3B8),
 
   /* =========================================
     LINKS
   ========================================= */
-  link: (color: #F4A000,
-    hover: color.scale(#F4A000, $lightness: -10%),
-    visited: color.scale(#F4A000, $lightness: -15%),
-  ),
+  link: (color: #F59E0B,
+    hover: #D97706,
+    visited: color.scale(#F59E0B, $lightness: -15%)),
+
+  /* =========================================
+    ACCENT EFFECTS
+  ========================================= */
+  accent: (light: rgba(245, 158, 11, 0.1),
+    glow: rgba(245, 158, 11, 0.25)),
 
   /* =========================================
     STATES
   ========================================= */
   state: (hover-overlay: rgba(0, 0, 0, 0.04),
     active-overlay: rgba(0, 0, 0, 0.08),
-    focus-ring: rgba(244, 160, 0, 0.45),
-  ),
+    focus-ring: rgba(245, 158, 11, 0.4)),
 
   /* =========================================
     DISABLED
   ========================================= */
-  disabled: (bg: #E5E7EB,
-    border: #D1D5DB,
-  ),
+  disabled: (bg: #E2E8F0,
+    border: #CBD5E1),
 
   /* =========================================
     PLACEHOLDER
   ========================================= */
-  placeholder: (color: #9CA3AF,
-  ),
+  placeholder: (color: #94A3B8),
 
   /* =========================================
     SELECTION
   ========================================= */
-  selection: (bg: #F4A000,
-    text: #FFFFFF,
-  ),
+  selection: (bg: #F59E0B,
+    text: #FFFFFF),
 
   /* =========================================
     BORDER
   ========================================= */
   border: (default: #E2E8F0,
-    strong: #CBD5E1,
-  ),
-
-  /* =========================================
-    SHADOW (extra útil pra UI)
-  ========================================= */
-  shadow: (sm: 0 1px 2px rgba(0, 0, 0, 0.06),
-    md: 0 4px 12px rgba(0, 0, 0, 0.08),
-    lg: 0 10px 30px rgba(0, 0, 0, 0.12),
-  ),
-
-  /* =========================================
-    GRADIENTS (usado no hero)
-  ========================================= */
-  gradient: (hero: linear-gradient(135deg, #0F223A, #1F3A5A),
-    hero-soft: linear-gradient(135deg, #1F3A5A, #2C4C73),
-  ),
-);
+    strong: #CBD5E1));
