@@ -16,7 +16,7 @@
         registro no CREA e emissão de ART.</span
       >
       <div class="buttons">
-        <button class="bg-brand-secondary-500">
+        <button class="bg-brand-secondary-500" autoScrollTo="contato-orcamento">
           <i class="fab fa-whatsapp"></i>
           Solicitar Orçamento Gratuito
         </button>
@@ -191,7 +191,7 @@
       <div class="faq-list">
         @for (item of faqs(); track item.id) {
           <div class="faq-item" [attr.data-id]="item.id">
-            <button class="faq-question">
+            <button class="faq-question" dropdown>
               <span>{{ item.question }}</span>
               <i class="fas fa-chevron-down"></i>
             </button>
@@ -210,4 +210,5 @@
       ><i class="fab fa-whatsapp"></i> Fale Conosco Agora</a
     >
   </section>
+  <gb-contact-order/>
 </main>

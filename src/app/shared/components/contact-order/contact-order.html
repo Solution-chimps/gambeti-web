@@ -1,0 +1,100 @@
+<article class="container">
+  <div class="section-intro">
+    <h2>Solicite um Orçamento</h2>
+    <div class="accent-bar"></div>
+    <p>Entre em contato. Responderemos em até 24 horas úteis.</p>
+  </div>
+  <div class="contact-layout">
+    <div class="contact-info-side">
+      <h3>Canais de Atendimento</h3>
+      <p>Estamos prontos para atender sua empresa em todo o Brasil.</p>
+      <div class="c-item">
+        <div class="c-item-icon"><i class="fab fa-whatsapp"></i></div>
+        <div class="c-item-body"><small>WhatsApp</small><a href="#">(XX) XXXXX-XXXX</a></div>
+      </div>
+      <div class="c-item">
+        <div class="c-item-icon"><i class="fas fa-envelope"></i></div>
+        <div class="c-item-body">
+          <small>E-mail</small><a href="mailto:contato@gambeti.com.br">contato@gambeti.com.br</a>
+        </div>
+      </div>
+      <div class="c-item">
+        <div class="c-item-icon"><i class="fas fa-globe"></i></div>
+        <div class="c-item-body"><small>Website</small><a href="#">www.gambeti.com.br</a></div>
+      </div>
+      <div class="c-item">
+        <div class="c-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="c-item-body">
+          <small>Atuação</small>
+          <p>Todo o território nacional</p>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="contact-form-side form">
+      <form [formGroup]="form">
+        <div class="row mb-3">
+          <div class="col-12 col-md-6">
+            <gb-input label="Nome Completo" placeholder="Nome da empresa" formControlName="name" />
+          </div>
+          <div class="col-12 col-md-6">
+            <gb-input label="Empresa" placeholder="Seu nome" formControlName="company" />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-6">
+            <gb-input label="E-email" placeholder="seu@email.com.br" formControlName="email" />
+          </div>
+          <div class="col-12 col-md-6">
+            <gb-input
+              label="Telefone / WhatsApp"
+              placeholder="(XX) XXXXX-XXXX"
+              formControlName="contact"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-12">
+            <label for="servico" class="form-label">Serviço de Interesse</label>
+            <select id="servico" class="form-select" formControlName="service">
+              <option value="">Selecione...</option>
+              <!-- <option *ngFor="let s of services" [value]="s">{{ s }}</option> -->
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-12">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea
+              id="mensagem"
+              class="form-control"
+              formControlName="message"
+              placeholder="Descreva o que precisa..."
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-accent w-100 justify-content-center">
+              <i class="fas fa-paper-plane"></i>&nbsp; Enviar Solicitação
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <i class="fas fa-check-circle"></i>
+        <h3>Mensagem Enviada!</h3>
+        <p>Nossa equipe entrará em contato em breve.</p>
+      </div>
+    </div>
+  </div>
+</article>

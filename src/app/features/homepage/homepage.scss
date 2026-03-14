@@ -569,7 +569,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 24px 0;
             text-align: left;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -577,6 +576,15 @@
             color: var(--gb-brand-primary-700);
             transition: color 0.3s;
             gap: 16px;
+            padding: 24px 0;
+
+            &:has(+div.open) {
+              color: var(--gb-brand-secondary-500);
+
+              i {
+                transform: rotate(180deg);
+              }
+            }
 
             &:hover {
               color: var(--gb-brand-secondary-500);
@@ -591,12 +599,20 @@
           }
 
           .faq-answer {
-            transition: max-height 0.4s ease;
+            transition: max-height 0.4s ease, padding-bottom 0.6s ease;
             color: var(--gb-gray-600);
             font-size: 0.95rem;
             line-height: 1.8;
             max-height: 500px;
-            padding-bottom: 24px;
+            overflow: hidden;
+
+            &:not(.open) {
+              padding-bottom: 0px;
+            }
+
+            &.open {
+              padding-bottom: 24px;
+            }
           }
         }
       }
