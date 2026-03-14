@@ -17,17 +17,25 @@ export abstract class AbstractControlValueAcessor<T> extends AbstractErrorMessag
   });
   protected readonly destroyRef = inject(DestroyRef);
   public readonly disabled = signal(false);
+  public readonly isRequired = signal(false);
 
   protected onTouched?: (...args: unknown[]) => void;
   protected onChange?: (...args: unknown[]) => void;
-
 
   constructor() {
     super();
     this.ngControl && (this.ngControl.valueAccessor = this);
   }
   public ngAfterViewInit(): void {
-    this.ngControl?.control?.events.pipe(takeUntilDestroyed(this.destroyRef), auditTime(90)).subscribe(this.generate.bind(this))
+    this.ngControl?.control?.events.pipe(takeUntilDestroyed(this.destroyRef), auditTime(90)).subscribe(this.generate.bind(this));
+    this.updateRequiredValidator();
+  }
+
+  private updateRequiredValidator() {
+    if (this.ngControl?.control) {
+      const { required } = this.ngControl.control.validator?.(this.ngControl.control) as { required: boolean; } || { required: false };
+      this.isRequired.set(required);
+    }
   }
 
   public writeValue(obj: T): void {
@@ -47,6 +55,7 @@ export abstract class AbstractControlValueAcessor<T> extends AbstractErrorMessag
   }
 
   public override generate(): void {
+    this.updateRequiredValidator();
     if (!this.ngControl?.control || this.ngControl.control.untouched || !this.ngControl.control.errors) {
       this.destroyMessage();
       return;

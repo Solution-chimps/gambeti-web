@@ -1,6 +1,15 @@
 :host {
   margin-bottom: 18px;
 
+  &.required label {
+    position: relative;
+
+    &::after {
+      content: '*';
+      margin-left: 5px;
+    }
+  }
+
   label {
     display: block;
     font-weight: 600;

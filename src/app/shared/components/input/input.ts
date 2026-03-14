@@ -1,9 +1,8 @@
-import { Component, computed, ElementRef, input, OnInit, signal, ViewChild } from '@angular/core';
+import { Component, computed, HostBinding, input, OnInit, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgxMaskDirective } from 'ngx-mask';
 
 import { AbstractControlValueAcessor } from '../../../core/abstracts/abstract-control-value-accessor.abstract';
-import { SPECIAL_CHARACTERS } from '../../../core/constants/special-chars.constants';
 import { InputType } from '../../../core/enums/input-type.enum';
 
 @Component({
@@ -21,13 +20,13 @@ export class Input extends AbstractControlValueAcessor<string | number | undefin
   public readonly suffix = input<string>('');
   public readonly mask = input<string>('');
   public readonly prefix = input<string>('');
+  public readonly rows = input<`${number}` | number>('4');
   public readonly thousandSeparator = input<string>(',');
   public readonly decimalMarker = input<'.' | ',' | ['.', ',']>('.');
   public readonly clearIfNotMatch = input<boolean>(false);
   public readonly showMaskTyped = input<boolean>(false);
   public readonly placeHolderCharacter = input<string>('_');
   public readonly shownMaskExpression = input<string>('');
-  public readonly specialCharacters = input<string[] | readonly string[]>(SPECIAL_CHARACTERS);
   public readonly dropSpecialCharacters = input<boolean | string[] | readonly string[]>(true);
   public readonly hiddenInput = input<boolean>(false);
   public readonly validation = input<boolean>(true);
@@ -47,9 +46,12 @@ export class Input extends AbstractControlValueAcessor<string | number | undefin
     }>
   >();
 
-  public readonly inputType = signal(this.type());
+  @HostBinding('class.required')
+  public get required() {
+    return this.isRequired();
+  }
 
-  @ViewChild('input') public input!: ElementRef<HTMLInputElement>;
+  public readonly inputType = signal(this.type());
 
   public readonly passwordIcon = computed(() => {
     if (this.inputType() === 'password') {

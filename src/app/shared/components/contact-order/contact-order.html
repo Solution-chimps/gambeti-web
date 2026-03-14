@@ -39,10 +39,10 @@
       <form [formGroup]="form">
         <div class="row mb-3">
           <div class="col-12 col-md-6">
-            <gb-input label="Nome Completo" placeholder="Nome da empresa" formControlName="name" />
+            <gb-input label="Nome Completo" placeholder="Seu nome" formControlName="name" />
           </div>
           <div class="col-12 col-md-6">
-            <gb-input label="Empresa" placeholder="Seu nome" formControlName="company" />
+            <gb-input label="Empresa" placeholder="Nome da empresa" formControlName="company" />
           </div>
         </div>
 
@@ -55,36 +55,32 @@
               label="Telefone / WhatsApp"
               placeholder="(XX) XXXXX-XXXX"
               formControlName="contact"
+              [mask]="contactMask()"
             />
           </div>
         </div>
 
         <div class="row mb-3">
           <div class="col-12 col-md-12">
-            <label for="servico" class="form-label">Serviço de Interesse</label>
-            <select id="servico" class="form-select" formControlName="service">
-              <option value="">Selecione...</option>
-              <!-- <option *ngFor="let s of services" [value]="s">{{ s }}</option> -->
-            </select>
+            <gb-select
+              [label]="'Serviço de Interesse'"
+              [placeholder]="'Selecione um serviço...'"
+              formControlName="service"
+              [options]="serviceOptions()"
+              [maxlength]="500"
+            ></gb-select>
           </div>
         </div>
 
         <div class="row mb-3">
           <div class="col-12 col-md-12">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea
-              id="mensagem"
-              class="form-control"
-              formControlName="message"
-              placeholder="Descreva o que precisa..."
-              rows="4"
-            ></textarea>
+            <gb-input label="Mensagem" formControlName="message"  placeholder="Descreva o que precisa..." rows="4" type="textarea"/>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-12">
-            <button type="submit" class="btn btn-accent w-100 justify-content-center">
+            <button type="submit" class="btn btn-accent w-100 justify-content-center" (click)="handleSubmit()">
               <i class="fas fa-paper-plane"></i>&nbsp; Enviar Solicitação
             </button>
           </div>

@@ -3,6 +3,7 @@ export enum InputTypeEnum {
   VALUE = "value",
   CHECKBOX = "checkbox",
   COLOR = "color",
+  TEXTAREA = "textarea",
   DATE = "date",
   DATETIME_LOCAL = "datetime-local",
   EMAIL = "email",

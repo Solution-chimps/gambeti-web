@@ -32,13 +32,12 @@ export abstract class AbstractErrorMessage {
 
   private getStyleElement(): Partial<CSSStyleDeclaration> {
     return {
-      position: 'absolute',
-      top: '100%',
       fontSize: '10px',
-      left: '2px',
       fontWeight: '500',
-      color: 'var(--ui-feedback-danger-500)',
-      textAlign: 'start'
+      color: 'var(--gb-feedback-danger-500)',
+      textAlign: 'start',
+      position: 'relative',
+      top: '-5px'
     }
   }
 

@@ -592,6 +592,8 @@
 
             &:hover {
               color: var(--gb-brand-secondary-500);
+              transform: unset;
+              box-shadow: unset;
             }
 
             i {

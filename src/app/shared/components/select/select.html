@@ -1,0 +1,20 @@
+<div class="custom-select-container" [class.disabled]="disabled()">
+  @if (label()) {
+    <label>{{ label() }}</label>
+  }
+  <input
+    type="text"
+    [(ngModel)]="searchValue"
+    [placeholder]="placeholder()"
+    (click)="toggleDropdown()"
+    (blur)="onFocusOut()"
+    (ngModelChange)="handleSearch()"
+  />
+  @if (open()) {
+    <ul class="options-list" animate.enter="enter-animation" animate.leave="leave-animation">
+      @for (opt of filtered(); track $index) {
+        <li class="option" (click)="selectOption(opt)">{{ opt.label }}</li>
+      }
+    </ul>
+  }
+</div>
