@@ -16,15 +16,15 @@
         registro no CREA e emissão de ART.</span
       >
       <div class="buttons">
-          <button class="bg-brand-secondary-500">
-            <i class="fab fa-whatsapp"></i>
-            Solicitar Orçamento Gratuito
-          </button>
+        <button class="bg-brand-secondary-500">
+          <i class="fab fa-whatsapp"></i>
+          Solicitar Orçamento Gratuito
+        </button>
 
-          <button class="outline">
-            <i class="fas fa-arrow-down"></i>
-            Ver Serviços
-          </button>
+        <button class="outline" autoScrollTo="servicos-engenharia-seguranca-trabalho">
+          <i class="fas fa-arrow-down"></i>
+          Ver Serviços
+        </button>
 
         <hr />
 
@@ -81,7 +81,7 @@
       </div>
     </div>
   </section>
-  <section class="section services" id="servicos-engenharia-seguranca-trabalho">
+  <section class="services" id="servicos-engenharia-seguranca-trabalho">
     <div class="container">
       <div class="section-intro">
         <h2>Serviços de Engenharia e Segurança do Trabalho</h2>
@@ -116,6 +116,98 @@
       </div>
     </div>
   </section>
-  <section></section>
-  <section></section>
+  <section class="differentials" id="diferenciais-gambeti">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Por que escolher a Gambeti Engenharia?</h2>
+        <div class="accent-bar"></div>
+        <p>Compromisso técnico, agilidade e conformidade total em cada serviço</p>
+      </div>
+      <div class="diff-grid">
+        @for (item of differentials(); track item.id) {
+          <div class="diff-item reveal visible">
+            <div class="diff-icon-wrap">
+              <i [class]="item.icon"></i>
+            </div>
+
+            <h3>
+              {{ item.title }}
+            </h3>
+
+            <p>
+              {{ item.description }}
+            </p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="sectors" id="setores-atendidos">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Setores e Segmentos Atendidos</h2>
+        <div class="accent-bar"></div>
+        <p>Experiência comprovada em diversos segmentos industriais</p>
+      </div>
+      <div class="sectors-flex">
+        @for (sector of sectors(); track sector.id) {
+          <div class="sector-chip" [attr.data-id]="sector.id">
+            <i [class]="sector.icon"></i>
+            <span>{{ sector.label }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="section trainings" id="treinamentos-nr-seguranca-trabalho">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Treinamentos NR — Segurança do Trabalho</h2>
+        <div class="accent-bar"></div>
+        <p>Capacitação completa da NR01 à NR39 — presencial, online ou in company</p>
+      </div>
+      <div class="nr-tags-wrap">
+        @for (nr of nrs(); track nr.id) {
+          <span class="nr-tag" [class.featured]="nr.featured">
+            {{ nr.label }}
+          </span>
+        }
+      </div>
+      <div class="training-bottom reveal visible">
+        <p>Precisa <strong>capacitar sua equipe</strong>? Solicite uma proposta personalizada.</p>
+        <a autoScrollTo="treinamentos" class="btn btn-accent"
+          ><i class="fas fa-graduation-cap"></i> Ver Todos os Treinamentos</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="perguntas-frequentes">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Perguntas Frequentes</h2>
+        <div class="accent-bar"></div>
+        <p>Respostas para as dúvidas mais comuns sobre nossos serviços</p>
+      </div>
+      <div class="faq-list">
+        @for (item of faqs(); track item.id) {
+          <div class="faq-item" [attr.data-id]="item.id">
+            <button class="faq-question">
+              <span>{{ item.question }}</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              {{ item.answer }}
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="cta-banner">
+    <h2>Sua empresa está em conformidade com as NRs?</h2>
+    <p>Evite multas, interdições e acidentes. Fale agora com nossos engenheiros.</p>
+    <a autoScrollTo="contato-orcamento" class="btn btn-dark"
+      ><i class="fab fa-whatsapp"></i> Fale Conosco Agora</a
+    >
+  </section>
 </main>

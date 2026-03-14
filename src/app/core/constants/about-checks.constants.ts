@@ -1,33 +1,33 @@
-import { AboutCheckType } from '../enums/about-check.types';
+import { AboutCheckEnum } from '../enums/about-check.enum';
 
 export const ABOUT_CHECKS: AboutCheck[] = [
   {
-    id: AboutCheckType.CREA,
+    id: AboutCheckEnum.CREA,
     icon: 'fas fa-check-circle',
     text: 'Registro CREA ativo'
   },
   {
-    id: AboutCheckType.ART,
+    id: AboutCheckEnum.ART,
     icon: 'fas fa-check-circle',
     text: 'Emissão de ART'
   },
   {
-    id: AboutCheckType.BRASIL,
+    id: AboutCheckEnum.BRASIL,
     icon: 'fas fa-check-circle',
     text: 'Atuação em todo o Brasil'
   },
   {
-    id: AboutCheckType.EQUIPE,
+    id: AboutCheckEnum.EQUIPE,
     icon: 'fas fa-check-circle',
     text: 'Equipe multidisciplinar'
   },
   {
-    id: AboutCheckType.LAUDOS,
+    id: AboutCheckEnum.LAUDOS,
     icon: 'fas fa-check-circle',
     text: 'Laudos com validade legal'
   },
   {
-    id: AboutCheckType.NRS,
+    id: AboutCheckEnum.NRS,
     icon: 'fas fa-check-circle',
     text: 'Conformidade total com NRs'
   }

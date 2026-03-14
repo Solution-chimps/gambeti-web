@@ -30,7 +30,7 @@
       }
 
       .bg-#{$new-key}-soft {
-        background-color: rgb(var(--#{$prefix}-#{$new-key}-rgb) / var(--ui-opacity, 0.1)) !important;
+        background-color: rgb(var(--#{$prefix}-#{$new-key}-rgb) / var(--gb-opacity, 0.1)) !important;
       }
     }
   }

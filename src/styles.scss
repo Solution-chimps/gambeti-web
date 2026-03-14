@@ -6,10 +6,10 @@
   box-sizing: border-box;
   scrollbar-width: thin;
   font-family: "Inter", system-ui, sans-serif;
-  scrollbar-color: var(--ui-brand-primary-500) var(--ui-surface-body);
+  scrollbar-color: var(--gb-brand-primary-500) var(--gb-surface-body);
 
   &::selection {
-    background-color: var(--ui-selection-bg);
-    color: var(--ui-selection-text);
+    background-color: var(--gb-selection-bg);
+    color: var(--gb-selection-text);
   }
 }
