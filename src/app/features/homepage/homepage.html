@@ -1,5 +1,214 @@
 <main>
+  <section class="home" id="home">
+    <div class="main-content-wrapper">
+      <span>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i>
+        Engenharia de Segurança do Trabalho
+      </span>
+      <h1>
+        Laudos técnicos, inspeções e
+        <strong class="text-brand-secondary-500">treinamentos NR</strong> para sua empresa
+        <strong class="text-brand-secondary-500">em todo o Brasil</strong>
+      </h1>
+      <span
+        >A Gambeti Engenharia oferece soluções completas em segurança do trabalho: laudos NR13, NR10
+        e NR20, projetos de engenharia, treinamentos obrigatórios e gestão do eSocial SST — com
+        registro no CREA e emissão de ART.</span
+      >
+      <div class="buttons">
+        <button class="bg-brand-secondary-500">
+          <i class="fab fa-whatsapp"></i>
+          Solicitar Orçamento Gratuito
+        </button>
 
+        <button class="outline" autoScrollTo="servicos-engenharia-seguranca-trabalho">
+          <i class="fas fa-arrow-down"></i>
+          Ver Serviços
+        </button>
 
+        <hr />
 
+        <ul>
+          <li>
+            <strong class="text-brand-secondary-500">NR01–NR39</strong>
+            <span>TREINAMENTOS</span>
+          </li>
+
+          <li>
+            <strong class="text-brand-secondary-500">CREA</strong>
+            <span>REGISTRO ATIVO</span>
+          </li>
+
+          <li>
+            <strong class="text-brand-secondary-500">Brasil</strong>
+            <span>ATUAÇÃO NACIONAL</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about-gambeti-engenharia">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-visual reveal visible">
+          <i class="fas fa-hard-hat about-visual-icon"></i>
+          <div class="crea-badge"><i class="fas fa-certificate"></i> CREA ATIVO</div>
+        </div>
+        <div class="about-body reveal visible">
+          <h2>Sobre a Gambeti Engenharia</h2>
+          <p>
+            A <strong>Gambeti Engenharia</strong> é uma empresa multidisciplinar especializada em
+            <strong>engenharia de segurança do trabalho</strong>, com atuação em todo o território
+            nacional. Nossa equipe é formada por engenheiros de segurança, mecânicos, eletricistas e
+            civis, todos com registro ativo no <strong>CREA</strong>.
+          </p>
+          <p>
+            Atuamos na elaboração de <strong>laudos técnicos</strong>,
+            <strong>inspeções periódicas</strong>, <strong>projetos de engenharia</strong>,
+            <strong>treinamentos em NRs</strong> e na <strong>gestão do eSocial SST</strong>. Todos
+            os nossos serviços são acompanhados de <strong>ART</strong>, assegurando a validade
+            legal.
+          </p>
+          <div class="about-checks">
+            @for (check of aboutChecks(); track check.id) {
+              <div class="about-check">
+                <i [class]="check.icon"></i>
+                {{ check.text }}
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="servicos-engenharia-seguranca-trabalho">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Serviços de Engenharia e Segurança do Trabalho</h2>
+        <div class="accent-bar"></div>
+        <p>
+          Soluções técnicas completas para manter sua empresa em total conformidade com as Normas
+          Regulamentadoras
+        </p>
+      </div>
+      <div class="services-grid">
+        @for (service of cards(); track service.title) {
+          <article class="svc-card reveal visible">
+            <div class="svc-icon">
+              <i [class]="service.icon"></i>
+            </div>
+
+            <h3>
+              {{ service.title }}
+            </h3>
+
+            <span class="svc-nr">
+              {{ service.tag }}
+            </span>
+
+            <p>
+              {{ service.description }}
+            </p>
+
+            <span class="svc-card-link"> Ver detalhes <i class="fas fa-arrow-right"></i> </span>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="differentials" id="diferenciais-gambeti">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Por que escolher a Gambeti Engenharia?</h2>
+        <div class="accent-bar"></div>
+        <p>Compromisso técnico, agilidade e conformidade total em cada serviço</p>
+      </div>
+      <div class="diff-grid">
+        @for (item of differentials(); track item.id) {
+          <div class="diff-item reveal visible">
+            <div class="diff-icon-wrap">
+              <i [class]="item.icon"></i>
+            </div>
+
+            <h3>
+              {{ item.title }}
+            </h3>
+
+            <p>
+              {{ item.description }}
+            </p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="sectors" id="setores-atendidos">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Setores e Segmentos Atendidos</h2>
+        <div class="accent-bar"></div>
+        <p>Experiência comprovada em diversos segmentos industriais</p>
+      </div>
+      <div class="sectors-flex">
+        @for (sector of sectors(); track sector.id) {
+          <div class="sector-chip" [attr.data-id]="sector.id">
+            <i [class]="sector.icon"></i>
+            <span>{{ sector.label }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="section trainings" id="treinamentos-nr-seguranca-trabalho">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Treinamentos NR — Segurança do Trabalho</h2>
+        <div class="accent-bar"></div>
+        <p>Capacitação completa da NR01 à NR39 — presencial, online ou in company</p>
+      </div>
+      <div class="nr-tags-wrap">
+        @for (nr of nrs(); track nr.id) {
+          <span class="nr-tag" [class.featured]="nr.featured">
+            {{ nr.label }}
+          </span>
+        }
+      </div>
+      <div class="training-bottom reveal visible">
+        <p>Precisa <strong>capacitar sua equipe</strong>? Solicite uma proposta personalizada.</p>
+        <a autoScrollTo="treinamentos" class="btn btn-accent"
+          ><i class="fas fa-graduation-cap"></i> Ver Todos os Treinamentos</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="perguntas-frequentes">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Perguntas Frequentes</h2>
+        <div class="accent-bar"></div>
+        <p>Respostas para as dúvidas mais comuns sobre nossos serviços</p>
+      </div>
+      <div class="faq-list">
+        @for (item of faqs(); track item.id) {
+          <div class="faq-item" [attr.data-id]="item.id">
+            <button class="faq-question">
+              <span>{{ item.question }}</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              {{ item.answer }}
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+  <section class="cta-banner">
+    <h2>Sua empresa está em conformidade com as NRs?</h2>
+    <p>Evite multas, interdições e acidentes. Fale agora com nossos engenheiros.</p>
+    <a autoScrollTo="contato-orcamento" class="btn btn-dark"
+      ><i class="fab fa-whatsapp"></i> Fale Conosco Agora</a
+    >
+  </section>
+  <app-footer></app-footer>
 </main>

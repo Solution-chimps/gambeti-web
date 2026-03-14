@@ -30,7 +30,10 @@
               "src/styles.scss",
               "src/assets/scss/_elements.scss",
               "src/assets/scss/themes/_themes.scss"
-            ]
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/assets/scss"]
+            }
           },
           "configurations": {
             "production": {
@@ -86,7 +89,10 @@
               "src/styles.scss",
               "src/assets/scss/_elements.scss",
               "src/assets/scss/themes/_themes.scss"
-            ]
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/assets/scss"]
+            }
           }
         }
       }

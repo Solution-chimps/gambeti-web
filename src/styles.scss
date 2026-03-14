@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  font-family: "Inter", system-ui, sans-serif;
+  scrollbar-color: var(--gb-brand-primary-500) var(--gb-surface-body);
+
+  &::selection {
+    background-color: var(--gb-selection-bg);
+    color: var(--gb-selection-text);
+  }
+}

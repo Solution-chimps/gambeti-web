@@ -1,10 +1,11 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {AutoScrollDirective} from '../../../shared/directives/auto-scroll/auto-scroll.directive';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AutoScrollDirective],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
@@ -14,12 +15,13 @@ export class HeaderComponent implements OnInit {
 
   menuItems = [
     { label: 'HOME', link: 'home' },
-    { label: 'SOBRE', link: 'about' },
-    { label: 'SERVIÇOS', link: 'services' },
-    { label: 'TREINAMENTOS', link: 'training' },
-    { label: 'FAQ', link: 'faq' },
-    { label: 'ORÇAMENTO', link: 'budget', highlight: true }
+    { label: 'SOBRE', link: 'about-gambeti-engenharia' },
+    { label: 'SERVIÇOS', link: 'servicos-engenharia-seguranca-trabalho' },
+    { label: 'TREINAMENTOS', link: 'treinamentos-nr-seguranca-trabalho' },
+    { label: 'FAQ', link: 'perguntas-frequentes' },
+    { label: 'ORÇAMENTO', link: 'contato-orcamento', highlight: true, icon: 'fab fa-whatsapp' }
   ];
+
 
   constructor() {}
 
@@ -55,27 +57,6 @@ export class HeaderComponent implements OnInit {
         }
       }
     }
-  }
-
-  scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-
-
-      history.pushState(null, '', `#${sectionId}`);
-
-      this.activeSection = sectionId;
-    }
-
-    this.isMenuOpen = false;
   }
 
   toggleMenu() {
