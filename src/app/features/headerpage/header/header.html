@@ -1,0 +1,62 @@
+
+<header class="header">
+  <div class="header-container">
+
+    <div class="logo">
+      <a autoScrollTo="home">
+        <span class="logo-gambeti">
+            GAMBE<span class="logo-destaque">TI</span>
+        </span>
+        <span class="logo-subtitle">
+          ENGENHARIA & SEGURANÇA DO TRABALHO
+        </span>
+      </a>
+    </div>
+
+    <nav class="desktop-nav">
+      <ul class="nav-list">
+        <li class="nav-item" *ngFor="let item of menuItems">
+          <a
+            [autoScrollTo]="item.link"
+            class="nav-link"
+            [class.active]="activeSection === item.link"
+            [class.btn-orcamento]="item.highlight"
+          >
+            {{ item.label }}
+            <i *ngIf="item.icon" [class]="item.icon"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="mobile-menu-btn"
+      (click)="toggleMenu()"
+      [class.active]="isMenuOpen"
+    >
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <div class="mobile-nav" [class.open]="isMenuOpen">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item" *ngFor="let item of menuItems">
+          <a
+            [autoScrollTo]="item.link"
+            class="mobile-nav-link"
+            [class.active]="activeSection === item.link"
+            [class.mobile-btn-orcamento]="item.highlight"
+            (click)="isMenuOpen = false"
+          >
+            {{ item.label }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+<div class="overlay" *ngIf="isMenuOpen" (click)="isMenuOpen = false"></div>
+
