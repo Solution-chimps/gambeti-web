@@ -150,6 +150,7 @@
 
     &.active {
       background: var(--gb-brand-secondary-500);
+      color: var(--gb-brand-primary-700);
 
       &::after {
         display: none;
