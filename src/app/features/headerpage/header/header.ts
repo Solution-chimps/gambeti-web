@@ -1,6 +1,7 @@
-import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {AutoScrollDirective} from '../../../shared/directives/auto-scroll/auto-scroll.directive';
+import { Component, HostListener, OnInit } from '@angular/core';
+
+import { AutoScrollDirective } from '../../../shared/directives/auto-scroll/auto-scroll.directive';
 
 @Component({
   selector: 'app-header',
@@ -25,7 +26,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
+  public ngOnInit() {
     this.checkActiveSectionOnLoad();
   }
 
@@ -59,7 +60,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  toggleMenu() {
+  public toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
 }

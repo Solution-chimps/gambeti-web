@@ -15,17 +15,21 @@
 
     <nav class="desktop-nav">
       <ul class="nav-list">
-        <li class="nav-item" *ngFor="let item of menuItems">
-          <a
-            [autoScrollTo]="item.link"
-            class="nav-link"
-            [class.active]="activeSection === item.link"
-            [class.btn-orcamento]="item.highlight"
-          >
-            {{ item.label }}
-            <i *ngIf="item.icon" [class]="item.icon"></i>
-          </a>
-        </li>
+        @for (item of menuItems; track $index) {
+          <li class="nav-item">
+            <a
+              [autoScrollTo]="item.link"
+              class="nav-link"
+              [class.active]="activeSection === item.link"
+              [class.btn-orcamento]="item.highlight"
+            >
+              {{ item.label }}
+              @if(item.icon){
+                <i [class]="item.icon"></i>
+              }
+            </a>
+          </li>
+        }
       </ul>
     </nav>
 
@@ -41,22 +45,26 @@
 
     <div class="mobile-nav" [class.open]="isMenuOpen">
       <ul class="mobile-nav-list">
-        <li class="mobile-nav-item" *ngFor="let item of menuItems">
-          <a
-            [autoScrollTo]="item.link"
-            class="mobile-nav-link"
-            [class.active]="activeSection === item.link"
-            [class.mobile-btn-orcamento]="item.highlight"
-            (click)="isMenuOpen = false"
-          >
-            {{ item.label }}
-          </a>
-        </li>
+        @for (item of menuItems; track $index) {
+          <li class="mobile-nav-item">
+            <a
+              [autoScrollTo]="item.link"
+              class="mobile-nav-link"
+              [class.active]="activeSection === item.link"
+              [class.mobile-btn-orcamento]="item.highlight"
+              (click)="isMenuOpen = false"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        }
       </ul>
     </div>
 
   </div>
 </header>
 
-<div class="overlay" *ngIf="isMenuOpen" (click)="isMenuOpen = false"></div>
+@if(isMenuOpen) {
+  <div class="overlay" (click)="isMenuOpen = false"></div>
+}
 

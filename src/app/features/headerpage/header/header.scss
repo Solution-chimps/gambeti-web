@@ -1,10 +1,14 @@
 .header {
-  background: linear-gradient(135deg, #1a2a4f 0%, #0f1a2f 100%);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  padding: 0.5rem 0;
+  background: #0a1628f2;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .header-container {
@@ -14,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 70px;
 
   @media (max-width: 768px) {
     height: 80px;
@@ -25,22 +29,18 @@
 
 .logo {
   a {
-    text-decoration: none;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 
   }
 
   .logo-gambeti {
-    font-size: 2rem;
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--gb-surface-base);
     letter-spacing: 2px;
-    color: #FFFFFF;
-    line-height: 1.2;
-    text-transform: uppercase;
-    white-space: nowrap;
 
     @media (max-width: 768px) {
       font-size: 1.5rem;
@@ -52,18 +52,18 @@
   }
 
   .logo-subtitle {
-    font-size: 0.9rem;
-    color: #BFBFBF;
-    letter-spacing: 1px;
-    font-weight: 400;
-    opacity: 0.9;
-    white-space: nowrap;
+    color: rgba(var(--gb-surface-base-rgb), var(--gb-opacity, 0.4));
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 
     @media (max-width: 768px) {
       font-size: 0.7rem;
       white-space: normal;
     }
   }
+
   @media (max-width: 600px) {
     .logo a {
       flex-direction: column;
@@ -81,10 +81,9 @@
 
   .nav-list {
     display: flex;
+    align-items: center;
+    gap: 6px;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0.5rem;
   }
 
   .nav-item {
@@ -92,16 +91,16 @@
   }
 
   .nav-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
     letter-spacing: 0.5px;
-    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s;
+    position: relative;
 
     &:hover {
       color: #D4A63F;
@@ -127,22 +126,30 @@
   }
 
   .btn-orcamento {
-    background: #D4A63F;
-    color: #ffffff;
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-    font-weight: 600;
-    margin-left: 1rem;
+    background: var(--gb-brand-secondary-500);
+    color: var(--gb-brand-primary-700);
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row-reverse;
+    text-align: center;
+    place-content: center;
+    place-items: center;
 
     &:hover {
-      background: #D4A63F;
-      color: #2E2E2E;
+      background: var(--gb-brand-secondary-600);
+      color: var(--gb-brand-primary-700);
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
     }
 
     &.active {
-      background: #D4A63F;
+      background: var(--gb-brand-secondary-500);
 
       &::after {
         display: none;
@@ -246,17 +253,24 @@
   }
 
   .mobile-btn-orcamento {
-    background: #D4A63F;
-    color: #ffffff;
+    background: var(--gb-brand-secondary-500);
+    color: var(--gb-brand-primary-700);
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row-reverse;
     text-align: center;
-    border-radius: 25px;
-    padding: 0.75rem;
-    margin-top: 1rem;
-    border: none;
+    place-content: center;
+    place-items: center;
 
     &:hover {
-      background: #D4A63F;
-      color: #ffffff;
+      background: var(--gb-brand-secondary-700);
+      color: var(--gb-brand-primary-700);
     }
   }
 }

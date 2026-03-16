@@ -10,6 +10,7 @@
           "style": "scss"
         }
       },
+
       "root": "",
       "sourceRoot": "src",
       "prefix": "gb",
@@ -35,6 +36,7 @@
               "includePaths": ["src/assets/scss"]
             }
           },
+
           "configurations": {
             "production": {
               "budgets": [
@@ -51,29 +53,36 @@
               ],
               "outputHashing": "all"
             },
+
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
             }
           },
+
           "defaultConfiguration": "production"
         },
+
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "gambeti-web:build:production"
             },
+
             "development": {
               "buildTarget": "gambeti-web:build:development"
             }
           },
+
           "defaultConfiguration": "development"
         },
+
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"
         },
+
         "test": {
           "builder": "@angular/build:karma",
           "options": {
@@ -98,6 +107,7 @@
       }
     }
   },
+
   "cli": {
     "analytics": false
   }
