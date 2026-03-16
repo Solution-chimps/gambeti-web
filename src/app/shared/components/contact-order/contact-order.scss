@@ -1,3 +1,5 @@
+@use 'breakpoints'as *;
+
 .quote-section {
   background: var(--gb-gray-50);
   padding: 80px 0;
@@ -11,6 +13,10 @@
     align-items: center;
     position: relative;
     z-index: 2;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
 
     .quote-text {
 
