@@ -1,96 +1,66 @@
-<article class="container">
-  <div class="section-intro">
-    <h2>Solicite um Orçamento</h2>
-    <div class="accent-bar"></div>
-    <p>Entre em contato. Responderemos em até 24 horas úteis.</p>
-  </div>
-  <div class="contact-layout">
-    <div class="contact-info-side">
-      <h3>Canais de Atendimento</h3>
-      <p>Estamos prontos para atender sua empresa em todo o Brasil.</p>
-      <div class="c-item">
-        <div class="c-item-icon"><i class="fab fa-whatsapp"></i></div>
-        <div class="c-item-body"><small>WhatsApp</small><a href="#">(XX) XXXXX-XXXX</a></div>
-      </div>
-      <div class="c-item">
-        <div class="c-item-icon"><i class="fas fa-envelope"></i></div>
-        <div class="c-item-body">
-          <small>E-mail</small><a href="mailto:contato@gambeti.com.br">contato@gambeti.com.br</a>
+<section class="quote-section" id="orcamento">
+  <div class="container">
+    <div class="quote-grid">
+      <div class="quote-text">
+        <h2>Solicite seu <strong>Orçamento</strong></h2>
+        <p>
+          Envie um e-mail ou mensagem informando o serviço desejado — laudo, treinamento ou inspeção
+          — e o número da NR. Nossa equipe técnica retorna em até <strong>2 horas úteis</strong> com
+          proposta comercial personalizada.
+        </p>
+        <p>
+          Atendemos empresas de todos os portes e segmentos em
+          <strong>todo o território nacional</strong>.
+        </p>
+        <div>
+          <a
+            href="https://www.instagram.com/gambetiengenharia"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/gambetiengenharia"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
-      <div class="c-item">
-        <div class="c-item-icon"><i class="fas fa-globe"></i></div>
-        <div class="c-item-body"><small>Website</small><a href="#">www.gambeti.com.br</a></div>
-      </div>
-      <div class="c-item">
-        <div class="c-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <div class="c-item-body">
-          <small>Atuação</small>
-          <p>Todo o território nacional</p>
-        </div>
-      </div>
-      <div class="socials">
-        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-    <div class="contact-form-side form">
-      <form [formGroup]="form">
-        <div class="row mb-3">
-          <div class="col-12 col-md-6">
-            <gb-input label="Nome Completo" placeholder="Seu nome" formControlName="name" />
+      <div class="quote-box">
+        <h3><i class="fas fa-paper-plane"></i> Canais de Atendimento</h3>
+        <a
+          href="mailto:comercial@gambeti.com.br?subject=Solicitação de Orçamento — Gambeti Engenharia&amp;body=Olá, gostaria de solicitar um orçamento para:%0A%0AServiço: (Laudo / Treinamento / Inspeção)%0ANR: %0AEmpresa: %0ACNPJ: %0AContato: "
+          class="quote-option"
+        >
+          <div class="quote-option-icon email"><i class="fas fa-envelope"></i></div>
+          <div class="quote-option-info">
+            <h4>E-mail Comercial</h4>
+            <p>comercial@gambeti.com.br</p>
           </div>
-          <div class="col-12 col-md-6">
-            <gb-input label="Empresa" placeholder="Nome da empresa" formControlName="company" />
+        </a>
+        <a
+          href="https://wa.me/5511997742018?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20a%20Gambeti%20Engenharia."
+          class="quote-option"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="quote-option-icon wpp"><i class="fab fa-whatsapp"></i></div>
+          <div class="quote-option-info">
+            <h4>WhatsApp</h4>
+            <p>(11) 99774-2018</p>
           </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-12 col-md-6">
-            <gb-input label="E-email" placeholder="seu@email.com.br" formControlName="email" />
+        </a>
+        <a href="tel:+5511997742018" class="quote-option">
+          <div class="quote-option-icon phone"><i class="fas fa-phone"></i></div>
+          <div class="quote-option-info">
+            <h4>Telefone</h4>
+            <p>(11) 99774-2018</p>
           </div>
-          <div class="col-12 col-md-6">
-            <gb-input
-              label="Telefone / WhatsApp"
-              placeholder="(XX) XXXXX-XXXX"
-              formControlName="contact"
-              [mask]="contactMask()"
-            />
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-12 col-md-12">
-            <gb-select
-              [label]="'Serviço de Interesse'"
-              [placeholder]="'Selecione um serviço...'"
-              formControlName="service"
-              [options]="serviceOptions()"
-              [maxlength]="500"
-            ></gb-select>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-12 col-md-12">
-            <gb-input label="Mensagem" formControlName="message"  placeholder="Descreva o que precisa..." rows="4" type="textarea"/>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-accent w-100 justify-content-center" (click)="handleSubmit()">
-              <i class="fas fa-paper-plane"></i>&nbsp; Enviar Solicitação
-            </button>
-          </div>
-        </div>
-      </form>
-      <div class="form-success" id="formSuccess">
-        <i class="fas fa-check-circle"></i>
-        <h3>Mensagem Enviada!</h3>
-        <p>Nossa equipe entrará em contato em breve.</p>
+        </a>
       </div>
     </div>
   </div>
-</article>
+</section>
