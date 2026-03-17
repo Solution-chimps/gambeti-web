@@ -10,4 +10,5 @@ export interface NR {
   label: string;
   /** Se é destaque (featured) */
   featured?: boolean;
+  routerLink: string[]
 }

@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { AutoScrollDirective } from '../../../shared/directives/auto-scroll/auto-scroll.directive';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, AutoScrollDirective],
+  imports: [CommonModule, AutoScrollDirective, RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

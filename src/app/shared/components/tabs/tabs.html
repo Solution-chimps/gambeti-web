@@ -1,0 +1,7 @@
+<div class="tabs">
+  @for (tab of tabs(); track $index) {
+    <button (click)="handleClickTab(tab)" class="tab-btn" [class.active]="tab.active">
+      <i class="fas fa-fire"></i> {{ tab.title }}
+    </button>
+  }
+</div>

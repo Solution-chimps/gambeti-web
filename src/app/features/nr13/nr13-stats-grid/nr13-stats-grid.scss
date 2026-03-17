@@ -1,0 +1,51 @@
+@use 'breakpoints'as *;
+@import './../nr13.scss';;
+
+.stats-bar {
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: var(--gb-surface-body);
+    border-radius: 18px;
+    box-shadow: 0 20px 50px -12px rgba(11, 61, 46, 0.18);
+    overflow: hidden;
+    border: 1px solid var(--gb-gray-200);
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item {
+      padding: 28px 16px;
+      text-align: center;
+      border-right: 1px solid var(--gb-gray-200);
+
+      @include tablet {
+        border-right: none;
+        border-bottom: 1px solid var(--gb-gray-200);
+      }
+
+      i {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      h3 {
+        font-size: 0.95rem;
+        color: var(--gb-brand-primary-700);
+        margin-bottom: 2px;
+      }
+
+      p {
+        color: var(--gb-gray-500);
+        font-weight: 600;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { ABOUT_CHECKS } from '../../core/constants/about-checks.constants';
 import { DIFFERENTIALS } from '../../core/constants/diferentials.constants';
@@ -9,12 +10,12 @@ import { SERVICE_CARDS } from '../../core/constants/service-cards.constants';
 import { ContactOrder } from '../../shared/components/contact-order/contact-order';
 import { AutoScrollDirective } from '../../shared/directives/auto-scroll/auto-scroll.directive';
 import { DropdownDirective } from '../../shared/directives/dropdown/dropdown.directive';
-import {HeaderComponent} from '../headerpage/header/header';
-import {FooterComponent} from '../headerpage/footer/footer/footer';
+import { FooterComponent } from '../headerpage/footer/footer/footer';
+import { HeaderComponent } from '../headerpage/header/header';
 
 @Component({
   selector: 'gb-homepage',
-  imports: [HeaderComponent,  DropdownDirective, FooterComponent,AutoScrollDirective, ContactOrder],
+  imports: [HeaderComponent, DropdownDirective, FooterComponent, AutoScrollDirective, ContactOrder, RouterLink],
   templateUrl: './homepage.html',
   styleUrl: './homepage.scss',
   })

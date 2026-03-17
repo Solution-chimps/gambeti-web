@@ -85,6 +85,15 @@ button {
     }
   }
 
+  &.btn-red {
+    background: linear-gradient(135deg, var(--gb-feedback-danger-500), #f87171);
+    color: var(--gb-surface-base);
+
+    &:hover {
+      box-shadow: 0 4px 24px var(--gb-feedback-danger-500);
+    }
+  }
+
   &.btn-dark {
     background: var(--gb-brand-primary-700);
     color: var(--gb-surface-base);

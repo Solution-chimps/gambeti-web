@@ -110,7 +110,7 @@
               {{ service.description }}
             </p>
 
-            <span class="svc-card-link"> Ver detalhes <i class="fas fa-arrow-right"></i> </span>
+            <span class="svc-card-link" [routerLink]="service.routerLink"> Ver detalhes <i class="fas fa-arrow-right"></i> </span>
           </article>
         }
       </div>
@@ -168,7 +168,7 @@
       </div>
       <div class="nr-tags-wrap">
         @for (nr of nrs(); track nr.id) {
-          <span class="nr-tag" [class.featured]="nr.featured">
+          <span class="nr-tag" [routerLink]="nr.routerLink" [class.featured]="nr.featured">
             {{ nr.label }}
           </span>
         }

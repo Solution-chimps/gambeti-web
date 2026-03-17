@@ -3,4 +3,5 @@ export interface ServiceCard {
   title: string;
   tag: string;
   description: string;
+  routerLink: string[]
 }

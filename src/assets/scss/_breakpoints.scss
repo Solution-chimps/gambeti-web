@@ -20,3 +20,9 @@ $wide: 1440px;
     @content;
   }
 }
+
+@mixin max-desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}

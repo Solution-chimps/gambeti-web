@@ -1,0 +1,39 @@
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  button {
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: 2px solid var(--gb-gray-200);
+    background: var(--gb-surface-body);
+    font-weight: 700;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Inter', sans-serif;
+    color: var(--gb-gray-200);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &.active {
+      background: linear-gradient(135deg, var(--gb-brand-primary-600), var(--gb-brand-primary-700));
+      color: var(--gb-surface-body);
+      border-color: transparent;
+    }
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:not(.active):hover {
+      border-color: var(--gb-brand-secondary-500);
+      color: var(--gb-brand-secondary-500);
+
+    }
+  }
+}
