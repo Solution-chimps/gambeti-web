@@ -8,12 +8,12 @@ export const FAQS: FaqItem[] = [
   {
     id: FaqIdEnum.SERVICOS,
     question: "Quais serviços a Gambeti Engenharia oferece?",
-    answer: "A Gambeti oferece laudos técnicos NR13 (caldeiras e vasos de pressão), NR10 (instalações elétricas), NR20 (inflamáveis), treinamentos em todas as NRs (NR01 a NR39), gestão do eSocial SST e projetos de engenharia civil. Todos os serviços com ART."
+    answer: "A Gambeti oferece laudos técnicos NR13 (caldeiras e vasos de pressão), NR10 (instalações elétricas), NR20 (inflamáveis), treinamentos em todas as NRs (NR01 a NR38), gestão do eSocial SST e projetos de engenharia civil. Todos os serviços com ART."
   },
   {
     id: FaqIdEnum.CREA,
     question: "A Gambeti possui registro no CREA?",
-    answer: "Sim. A Gambeti Engenharia possui registro ativo no CREA e todos os serviços são acompanhados de Anotação de Responsabilidade Técnica (ART), garantindo validade legal."
+    answer: "Sim. A Gambeti Engenharia possui registro ativo no CREA (Nº 2475417-SP) e todos os serviços são acompanhados de Anotação de Responsabilidade Técnica (ART), garantindo validade legal."
   },
   {
     id: FaqIdEnum.ATUACAO_BRASIL,

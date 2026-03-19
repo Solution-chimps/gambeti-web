@@ -28,7 +28,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
   {
     icon: 'fas fa-graduation-cap',
     title: 'Treinamentos NR',
-    tag: 'NR01 — NR39',
+    tag: 'NR01 — NR38',
     description: `Capacitação obrigatória em todas as Normas Regulamentadoras do Ministério do Trabalho.
     Treinamentos presenciais, online (EAD) e in company.`,
     routerLink: []
