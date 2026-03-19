@@ -1,0 +1,131 @@
+@import 'breakpoints';
+@import './../nr13.scss';
+
+
+.soldagem-section {
+  background: var(--gb-grau-50);
+
+  .soldagem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+
+    .btn-red i {
+      color: var(--gb-surface-body) !important;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    .soldagem-info {
+      h3 {
+        font-size: 1.5rem;
+        color: var(--gb-brand-primary-700);
+        margin-bottom: 16px;
+
+        strong {
+          color: var(--gb-feedback-danger-500);
+        }
+      }
+
+      >p {
+        color: var(--gb-gray-500);
+        font-size: 0.95rem;
+        line-height: 1.85;
+        margin-bottom: 22px;
+      }
+
+      .soldagem-list {
+        list-style: none;
+        margin-bottom: 28px;
+
+        li {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          padding: 15px 0;
+          font-size: 0.92rem;
+          color: var(--gb-brand-primary-700);
+          font-weight: 500;
+          border-bottom: 1px solid var(--gb-gray-200);
+
+          i {
+            color: var(--gb-feedback-danger-500);
+            margin-top: 3px;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      .soldagem-normas {
+        margin: 20px;
+        margin-left: 0px;
+
+        .soldagem-norma-main {
+          padding: 8px 16px;
+        }
+      }
+    }
+
+    .soldagem-visual {
+      background: linear-gradient(135deg, #7f1d1d, #991b1b);
+      border-radius: 24px;
+      padding: 50px 40px;
+      color: var(--gb-surface-body);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+
+      i.big {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        display: block;
+        color: #fca5a5;
+        position: relative;
+        z-index: 2;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 2;
+      }
+
+      p {
+        opacity: 0.8;
+        font-size: 0.9rem;
+        position: relative;
+        z-index: 2;
+
+        +div {
+          margin-top: 25px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+
+          div {
+            background: rgba(var(--gb-surface-base-rgb), var(--gb-opacity, 0.08));
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+
+            i {
+              font-size: 1.3rem;
+              color: #fca5a5;
+              display: block;
+              margin-bottom: 6px;
+            }
+
+            span {
+              font-size: 0.75rem;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+  }
+}

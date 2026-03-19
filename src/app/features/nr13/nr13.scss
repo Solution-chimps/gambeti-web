@@ -81,4 +81,25 @@
       margin: 0 auto;
     }
   }
+
+  .soldagem-normas,
+  .soldagem-box-normas {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+
+    .soldagem-norma-main,
+    .soldagem-norma {
+      padding: 5px 13px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: rgba(239, 68, 68, 0.08);
+      color: var(--gb-feedback-danger-500);
+      border: 1px solid rgba(239, 68, 68, 0.15);
+    }
+  }
 }

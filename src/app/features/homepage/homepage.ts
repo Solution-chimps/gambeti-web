@@ -10,12 +10,10 @@ import { SERVICE_CARDS } from '../../core/constants/service-cards.constants';
 import { ContactOrder } from '../../shared/components/contact-order/contact-order';
 import { AutoScrollDirective } from '../../shared/directives/auto-scroll/auto-scroll.directive';
 import { DropdownDirective } from '../../shared/directives/dropdown/dropdown.directive';
-import { FooterComponent } from '../headerpage/footer/footer/footer';
-import { HeaderComponent } from '../headerpage/header/header';
 
 @Component({
   selector: 'gb-homepage',
-  imports: [HeaderComponent, DropdownDirective, FooterComponent, AutoScrollDirective, ContactOrder, RouterLink],
+  imports: [DropdownDirective, AutoScrollDirective, ContactOrder, RouterLink],
   templateUrl: './homepage.html',
   styleUrl: './homepage.scss',
   })
