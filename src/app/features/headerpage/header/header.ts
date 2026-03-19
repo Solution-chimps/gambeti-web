@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
+import { ContactDataService } from '../../../shared/components/contact-order/contact-data';
 import { AutoScrollDirective } from '../../../shared/directives/auto-scroll/auto-scroll.directive';
 
 @Component({
@@ -12,20 +13,19 @@ import { AutoScrollDirective } from '../../../shared/directives/auto-scroll/auto
   styleUrl: './header.scss',
 })
 export class HeaderComponent implements OnInit {
-  isMenuOpen = false;
-  activeSection: string = 'home';
+  public isMenuOpen = false;
+  public activeSection: string = 'home';
 
-  menuItems = [
+  public menuItems = [
     { label: 'HOME', link: 'home' },
     { label: 'SOBRE', link: 'about-gambeti-engenharia' },
     { label: 'SERVIÇOS', link: 'servicos-engenharia-seguranca-trabalho' },
     { label: 'TREINAMENTOS', link: 'treinamentos-nr-seguranca-trabalho' },
     { label: 'FAQ', link: 'perguntas-frequentes' },
-    { label: 'ORÇAMENTO', link: 'contato-orcamento', highlight: true, icon: 'fab fa-whatsapp' }
+    { label: 'ORÇAMENTO', link: 'contato-orcamento', highlight: true, icon: 'fab fa-whatsapp', onclick: this.handleOrder.bind(this) }
   ];
 
-
-  constructor() {}
+  public readonly contactService = inject(ContactDataService);
 
   public ngOnInit() {
     this.checkActiveSectionOnLoad();
@@ -52,13 +52,16 @@ export class HeaderComponent implements OnInit {
         const rect = element.getBoundingClientRect();
         const offset = 100;
 
-
         if (rect.top <= offset && rect.bottom >= offset) {
           this.activeSection = section;
           break;
         }
       }
     }
+  }
+
+  public handleOrder(): void {
+    this.contactService.dispatchUpdateContactData('CONTATO_GERAL')
   }
 
   public toggleMenu() {

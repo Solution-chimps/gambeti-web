@@ -22,6 +22,7 @@
               class="nav-link"
               [class.active]="activeSection === item.link"
               [class.btn-orcamento]="item.highlight"
+              (click)="item.onclick?.()"
             >
               {{ item.label }}
               @if(item.icon){

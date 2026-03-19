@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
+import { ContactKey } from '../../core/constants/contact.constants';
 import { ContactOrder } from '../../shared/components/contact-order/contact-order';
 import { Nr13Faq } from './nr13-faq/nr13-faq';
 import { Nr13Header } from './nr13-header/nr13-header';
@@ -17,4 +18,9 @@ import { Nr13StatsGrid } from './nr13-stats-grid/nr13-stats-grid';
 })
 export class Nr13 {
 
+  public readonly redirectMessage = signal<ContactKey>('CONTATO_GERAL');
+
+  public updateContact(event: ContactKey) {
+    this.redirectMessage.set(event);
+  }
 }

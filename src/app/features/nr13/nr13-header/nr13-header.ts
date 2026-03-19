@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 
+import { ContactKey } from '../../../core/constants/contact.constants';
 import { AutoScrollDirective } from '../../../shared/directives/auto-scroll/auto-scroll.directive';
 
 @Component({
@@ -9,5 +10,7 @@ import { AutoScrollDirective } from '../../../shared/directives/auto-scroll/auto
   styleUrl: './nr13-header.scss',
 })
 export class Nr13Header {
+
+  public readonly redirectMessage = output<ContactKey>()
 
 }

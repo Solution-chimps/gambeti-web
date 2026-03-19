@@ -30,7 +30,7 @@
           <li><i class="fas fa-check-circle"></i> Plaqueta de identificação</li>
           <li><i class="fas fa-check-circle"></i> ARTs de todas as atividades realizadas</li>
         </ul>
-        <a autoScrollTo="orcamento" class="btn btn-sm"
+        <a autoScrollTo="orcamento" class="btn btn-sm" (click)="redirectMessage.emit('PRONTUARIO')"
           ><i class="fas fa-folder-open"></i> RECONSTITUIR PRONTUÁRIO</a
         >
       </div>

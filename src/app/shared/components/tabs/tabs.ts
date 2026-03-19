@@ -1,4 +1,14 @@
-import { AfterViewInit, Component, effect, inject, input, signal, ViewContainerRef } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  effect,
+  EventEmitter,
+  inject,
+  input,
+  OutputEmitterRef,
+  signal,
+  ViewContainerRef,
+} from '@angular/core';
 
 import { Tab } from '../../../core/interfaces/tab.interface';
 
@@ -14,6 +24,7 @@ export class Tabs implements AfterViewInit {
 
   public cloneTabs = signal<Tab[]>([]);
   private readonly viewContainerRef = inject(ViewContainerRef);
+  public readonly activeTab = signal<Tab | undefined>(undefined);
 
   constructor() {
     effect(() => {
@@ -34,7 +45,15 @@ export class Tabs implements AfterViewInit {
         current.active = current.title === tab.title;
         if (current.active && current.component) {
           this.viewContainerRef.clear();
-          this.viewContainerRef.createComponent(current.component!);
+          this.activeTab.set(tab)
+          const ref = this.viewContainerRef.createComponent(current.component!);
+          const data = current.data;
+          Object.entries(data?.outputs || {}).forEach(([key, value]) => {
+            value && (ref.instance?.[key as unknown as keyof typeof ref.instance] as unknown as EventEmitter<unknown> | OutputEmitterRef<unknown>)?.subscribe(value as (...args: unknown[]) => void)
+          });
+          Object.entries(data?.inputs || {}).forEach(([key, value]) => {
+            ref.setInput(key, value)
+          })
         }
         return current;
       })

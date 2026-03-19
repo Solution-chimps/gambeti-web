@@ -10,7 +10,7 @@ export const FAQ_TYPE: FaqTypeItem[] = [
   {
     question: 'Qual a periodicidade das inspeções de caldeiras?',
     answer: 'As caldeiras são classificadas em Categoria A (pressão de operação ≥ 1960 kPa) e Categoria B (pressão de operação &lt; 1960 kPa com volume &gt; 50 litros). Para ambas as categorias, os prazos de inspeção periódica (interna e externa) são estabelecidos a partir de 12 meses, podendo ser ampliados conforme avaliação técnica do Profissional Legalmente Habilitado (PLH). O PLH define o intervalo adequado considerando o histórico operacional, estado de conservação, mecanismos de deterioração e resultados de inspeções anteriores.',
-    type: FaqTypeEnum.INSPECAO
+    type: FaqTypeEnum.CALDEIRA
   },
   {
     question: 'O que é o teste hidrostático e quando é obrigatório?',

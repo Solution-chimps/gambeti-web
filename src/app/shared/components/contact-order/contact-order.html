@@ -32,7 +32,7 @@
       <div class="quote-box">
         <h3><i class="fas fa-paper-plane"></i> Canais de Atendimento</h3>
         <a
-          href="mailto:comercial@gambeti.com.br?subject=Solicitação de Orçamento — Gambeti Engenharia&amp;body=Olá, gostaria de solicitar um orçamento para:%0A%0AServiço: (Laudo / Treinamento / Inspeção)%0ANR: %0AEmpresa: %0ACNPJ: %0AContato: "
+          [href]="buildEmailLink()"
           class="quote-option"
         >
           <div class="quote-option-icon email"><i class="fas fa-envelope"></i></div>
@@ -42,7 +42,7 @@
           </div>
         </a>
         <a
-          href="https://wa.me/5511997742018?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20a%20Gambeti%20Engenharia."
+          [href]="'https://wa.me/5511997742018?text=' + encode().wa"
           class="quote-option"
           target="_blank"
           rel="noopener"

@@ -82,7 +82,7 @@
           <span class="soldagem-norma-main"><i class="fas fa-book"></i> API 653</span>
           <span class="soldagem-norma-main"><i class="fas fa-book"></i> NR-13</span>
         </div>
-        <a autoScrollTo="orcamento" class="btn btn-sm btn-red"
+        <a autoScrollTo="orcamento" (click)="redirectMessage.emit('SOLDAGEM_GERAL')" class="btn btn-sm btn-red"
           ><i class="fas fa-fire-flame-simple"></i> ORÇAMENTO DE SOLDAGEM</a
         >
       </div>

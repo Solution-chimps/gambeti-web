@@ -99,7 +99,7 @@
           </div>
         </li>
       </ul>
-      <a autoScrollTo="contato-orcamento" class="btn btn-sm btn-accent"
+      <a autoScrollTo="contato-orcamento" (click)="redirectMessage.emit('CALDEIRAS')" class="btn btn-sm btn-accent"
         ><i class="fas fa-file-invoice"></i> ORÇAMENTO PARA CALDEIRAS</a
       >
     </div>
@@ -210,7 +210,7 @@
       <span class="soldagem-norma"><i class="fas fa-book"></i> NR-13</span>
     </div>
     <div class="soldagem-box-cta">
-      <a autoScrollTo="orcamento" class="btn btn-sm btn-red"
+      <a autoScrollTo="orcamento" class="btn btn-sm btn-red" (click)="redirectMessage.emit('SOLDAGEM_CALDEIRAS')"
         ><i class="fas fa-fire-flame-simple"></i> ORÇAMENTO DE SOLDAGEM EM CALDEIRAS</a
       >
     </div>

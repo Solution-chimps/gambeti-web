@@ -59,7 +59,7 @@
           </div>
         </li>
       </ul>
-      <a autoScrollTo="orcamento" class="btn btn-sm btn-accent"
+      <a autoScrollTo="orcamento" (click)="redirectMessage.emit('SOLDAGEM_TUBULACOES')" class="btn btn-sm btn-accent"
         ><i class="fas fa-file-invoice"></i> ORÇAMENTO PARA TUBULAÇÕES</a
       >
     </div>
@@ -145,7 +145,7 @@
       <span class="soldagem-norma"><i class="fas fa-book"></i> NR-13</span>
     </div>
     <div class="soldagem-box-cta">
-      <a autoScrollTo="orcamento" class="btn btn-sm btn-red"
+      <a autoScrollTo="orcamento" (click)="redirectMessage.emit('SOLDAGEM_TANQUES')" class="btn btn-sm btn-red"
         ><i class="fas fa-fire-flame-simple"></i> ORÇAMENTO DE SOLDAGEM EM TUBULAÇÕES</a
       >
     </div>
