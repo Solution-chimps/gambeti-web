@@ -7,7 +7,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     tag: 'NR13',
     description: `Serviços completos de engenharia mecânica para caldeiras, vasos de pressão e tubulações,
     conforme a Norma Regulamentadora NR13. Inspeções periódicas, adequações e emissão de laudos técnicos.`,
-    routerLink: ['nr13']
+    routerLink: ['/nr13']
   },
   {
     icon: 'fas fa-bolt',

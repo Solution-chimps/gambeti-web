@@ -12,7 +12,7 @@ export const NRS: NR[] = [
   { id: NRIdEnum.NR10, label: "NR10 – Eletricidade", featured: true, routerLink: [] },
   { id: NRIdEnum.NR11, label: "NR11 – Transporte", routerLink: [] },
   { id: NRIdEnum.NR12, label: "NR12 – Máquinas", routerLink: [] },
-  { id: NRIdEnum.NR13, label: "NR13 – Caldeiras", featured: true, routerLink: ['nr13'] },
+  { id: NRIdEnum.NR13, label: "NR13 – Caldeiras", featured: true, routerLink: [] },
   { id: NRIdEnum.NR15, label: "NR15", routerLink: [] },
   { id: NRIdEnum.NR17, label: "NR17 – Ergonomia", routerLink: [] },
   { id: NRIdEnum.NR18, label: "NR18 – Construção", routerLink: [] },
