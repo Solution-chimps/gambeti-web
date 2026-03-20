@@ -23,7 +23,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     tag: 'NR20',
     description: `Laudos técnicos, adequações e análises de riscos para operações seguras com líquidos
     inflamáveis e combustíveis, em conformidade com a NR20.`,
-    routerLink: []
+    routerLink: ['/nr20']
   },
   {
     icon: 'fas fa-graduation-cap',

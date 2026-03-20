@@ -1,5 +1,4 @@
 @use 'breakpoints'as *;
-@import './../nr13.scss';;
 
 .stats-bar {
   margin-top: -50px;
@@ -36,9 +35,12 @@
       }
 
       h3 {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
         color: var(--gb-brand-primary-700);
         margin-bottom: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        line-height: 1.2;
       }
 
       p {

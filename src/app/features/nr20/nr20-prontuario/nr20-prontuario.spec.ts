@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Nr13StatsGrid } from './nr13-stats-grid';
+import { Nr20Prontuario } from './nr20-prontuario';
 
-describe('Nr13StatsGrid', () => {
-  let component: Nr13StatsGrid;
-  let fixture: ComponentFixture<Nr13StatsGrid>;
+describe('Nr20Prontuario', () => {
+  let component: Nr20Prontuario;
+  let fixture: ComponentFixture<Nr20Prontuario>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Nr13StatsGrid]
+      imports: [Nr20Prontuario]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Nr13StatsGrid);
+    fixture = TestBed.createComponent(Nr20Prontuario);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

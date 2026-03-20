@@ -1,5 +1,6 @@
 @use 'breakpoints'as *;
-@import './../nr13.scss';;
+@import './../nr13.scss';
+;
 
 .hero-nr13 {
   background: linear-gradient(160deg, #1a0a00 0%, #2d1600 30%, #4a2500 60%, #1a0a00 100%);
@@ -81,7 +82,7 @@
 
       .btn-outline {
         background: transparent;
-        border: 2px solid rgba(255, 255, 255, 0.25);
+        border: 2px solid rgba(var(--gb-surface-body-rgb), var(--gb-opacity, 0.25));
         color: var(--gb-surface-body);
 
         &:hover {

@@ -1,0 +1,11 @@
+<div class="container stats-bar">
+  <div class="stats-grid">
+    @for (item of items(); track $index) {
+      <div class="stat-item fade-in visible">
+        <i [class]="item.icon" [style.color]="item.color"></i>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    }
+  </div>
+</div>
