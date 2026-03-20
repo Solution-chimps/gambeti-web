@@ -134,6 +134,100 @@ NR:
 Empresa:
 CNPJ:
 Contato:`
+  },
+  NR20_GERAL: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento de serviços NR-20 (prontuário, inventário, análise de riscos, plano de emergência e treinamentos).',
+    email: `Olá, gostaria de solicitar um orçamento de serviços NR-20:
+
+Serviço:
+Unidade / Área:
+Empresa:
+CNPJ:
+Contato:`
+  },
+
+  NR20_PRONTUARIO: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para elaboração de Prontuário NR-20.',
+    email: `Olá, gostaria de solicitar um orçamento para Prontuário NR-20:
+
+Tipo de instalação:
+Quantidade de áreas:
+Possui documentação atual (Sim / Não):
+Empresa:
+CNPJ:
+Contato:`
+  },
+
+  NR20_INVENTARIO: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para Inventário de Inflamáveis e Combustíveis conforme NR-20.',
+    email: `Olá, gostaria de solicitar um orçamento para Inventário de Inflamáveis e Combustíveis:
+
+Tipos de produtos:
+Quantidade de tanques / recipientes:
+Capacidade aproximada:
+Empresa:
+CNPJ:
+Contato:`
+  },
+
+  NR20_ANALISE_RISCOS: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para Análise de Riscos (APR / HAZOP / What-If) conforme NR-20.',
+    email: `Olá, gostaria de solicitar um orçamento para Análise de Riscos NR-20:
+
+Tipo de análise (APR / HAZOP / What-If):
+Processo / área:
+Quantidade de unidades:
+Empresa:
+CNPJ:
+Contato:`
+  },
+
+  NR20_PLANO_EMERGENCIA: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para Plano de Emergência conforme NR-20.',
+    email: `Olá, gostaria de solicitar um orçamento para Plano de Emergência NR-20:
+
+Tipo de instalação:
+Cenários de risco conhecidos:
+Possui brigada?
+Empresa:
+CNPJ:
+Contato:`
+  },
+
+  NR20_PROCEDIMENTOS: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para elaboração de Procedimentos Operacionais conforme NR-20.',
+    email: `Olá, gostaria de solicitar um orçamento para Procedimentos NR-20:
+
+Tipo de operação:
+Quantidade de procedimentos:
+Área / setor:
+Empresa:
+CNPJ:
+Contato:`
+  },
+
+  NR20_TREINAMENTOS: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para Treinamentos NR-20.',
+    email: `Olá, gostaria de solicitar um orçamento para Treinamentos NR-20:
+
+Carga horária (4h / 8h / 16h / 24h / 40h):
+Quantidade de colaboradores:
+Modalidade (presencial / online):
+Empresa:
+CNPJ:
+Contato:`
+  },
+
+  NR20_PRONTUARIO_MONTAGEM: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para montagem completa do Prontuário NR-20.',
+    email: `Olá, gostaria de solicitar um orçamento para montagem completa do Prontuário NR-20:
+
+Situação atual:
+Tipo de instalação:
+Quantidade de áreas:
+Empresa:
+CNPJ:
+Contato:`
   }
 };
 

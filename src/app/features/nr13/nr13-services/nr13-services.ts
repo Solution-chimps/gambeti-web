@@ -1,16 +1,13 @@
-import { Component, output, OutputEmitterRef, signal } from '@angular/core';
+import { Component, output, signal } from '@angular/core';
 
 import { ContactKey } from '../../../core/constants/contact.constants';
+import { TabGenericComponent } from '../../../core/interfaces/tab-generic-components.interface';
 import { Tab } from '../../../core/interfaces/tab.interface';
 import { Tabs } from '../../../shared/components/tabs/tabs';
 import { CaldeirasTab } from './caldeiras-tab/caldeiras-tab';
 import { TanquesTab } from './tanques-tab/tanques-tab';
 import { TubulacoesTab } from './tubulacoes-tab/tubulacoes-tab';
 import { VasosTab } from './vasos-tab/vasos-tab';
-
-interface TabGenericComponent {
-  redirectMessage: OutputEmitterRef<ContactKey>
-}
 
 @Component({
   selector: 'gb-nr13-services',
@@ -21,8 +18,6 @@ interface TabGenericComponent {
 export class Nr13Services {
 
   public readonly tabs = signal<Tab<TabGenericComponent>[]>([]);
-
-
 
   public readonly redirectMessage = output<ContactKey>();
 

@@ -1,0 +1,29 @@
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-header">
+      <div class="overline">Serviços Detalhados</div>
+      <h2>O que a Gambeti entrega no <strong>Laudo NR-20</strong></h2>
+      <p>
+        Selecione o serviço para ver o detalhamento técnico, metodologia, entregas e normas
+        aplicáveis
+      </p>
+    </div>
+
+    <gb-tabs [tabs]="tabs()" class="tabs-container">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="inventario">
+          <i class="fas fa-boxes-stacked"></i> Inventário
+        </button>
+        <button class="tab-btn" data-tab="analise">
+          <i class="fas fa-triangle-exclamation"></i> Análise de Riscos
+        </button>
+        <button class="tab-btn" data-tab="emergencia">
+          <i class="fas fa-truck-medical"></i> Plano de Emergência
+        </button>
+        <button class="tab-btn" data-tab="procedimentos">
+          <i class="fas fa-clipboard-list"></i> Procedimentos
+        </button>
+      </div>
+    </gb-tabs>
+  </div>
+</section>
