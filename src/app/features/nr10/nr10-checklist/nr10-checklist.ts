@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'gb-nr10-checklist',
-  imports: [],
+  selector: 'app-nr10-checklist',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './nr10-checklist.html',
-  styleUrl: './nr10-checklist.scss',
+  styleUrls: ['./nr10-checklist.scss']
 })
-export class Nr10Checklist {
-
-}
+export class Nr10ChecklistComponent {}

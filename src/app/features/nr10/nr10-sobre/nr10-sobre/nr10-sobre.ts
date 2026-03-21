@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'gb-nr10-sobre',
-  imports: [],
+  selector: 'app-nr10-sobre',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './nr10-sobre.html',
-  styleUrl: './nr10-sobre.scss',
+  styleUrls: ['./nr10-sobre.scss']
 })
-export class Nr10Sobre {
-
-}
+export class Nr10SobreComponent {}

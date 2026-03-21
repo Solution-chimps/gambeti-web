@@ -3,6 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="fda5456a-4930-40a1-9d3f-9a55f8819a2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/constants/service-cards.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/constants/service-cards.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

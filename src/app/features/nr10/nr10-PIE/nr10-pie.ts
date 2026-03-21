@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'gb-nr10-pie',
-  imports: [],
+  selector: 'app-nr10-pie',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './nr10-pie.html',
-  styleUrl: './nr10-pie.scss',
+  styleUrls: ['./nr10-pie.scss']
 })
-export class Nr10PIE {
-
-}
+export class Nr10PieComponent {}

@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<!-- HEADER -->
+<app-nr10-header></app-nr10-header>
 
-</body>
-</html>
+<main>
+  <!-- HERO SECTION -->
+  <app-nr10-prontuario></app-nr10-prontuario>
+
+  <!-- PIE OVERVIEW -->
+  <app-nr10-pie></app-nr10-pie>
+
+  <!-- SERVICES SECTION -->
+  <app-nr10-services></app-nr10-services>
+
+  <!-- PROCESS SECTION -->
+  <app-nr10-processo></app-nr10-processo>
+
+  <!-- OBRIGATIONS SECTION -->
+  <app-nr10-obrigacoes></app-nr10-obrigacoes>
+
+  <!-- CHECKLIST SECTION -->
+  <app-nr10-checklist></app-nr10-checklist>
+
+  <!-- ABOUT SECTION -->
+  <app-nr10-sobre></app-nr10-sobre>
+</main>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/5511997742018" class="wpp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a class="back-to-top" [class.visible]="showBackToTop" (click)="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</a>

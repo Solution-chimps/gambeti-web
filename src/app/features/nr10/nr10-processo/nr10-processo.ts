@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'gb-nr10-processo',
-  imports: [],
+  selector: 'app-nr10-processo',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './nr10-processo.html',
-  styleUrl: './nr10-processo.scss',
+  styleUrls: ['./nr10-processo.scss']
 })
-export class Nr10Processo {
-
-}
+export class Nr10ProcessoComponent {}
