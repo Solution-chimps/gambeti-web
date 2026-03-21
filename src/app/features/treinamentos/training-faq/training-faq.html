@@ -1,0 +1,25 @@
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="overline">Perguntas Frequentes</div>
+      <h2>Dúvidas sobre <em>Treinamentos NR</em></h2>
+      <p>
+        Respostas completas sobre cargas horárias, validades, certificação, reciclagem e
+        obrigatoriedade dos treinamentos
+      </p>
+    </div>
+    <div class="faq-list">
+      @for (item of faqs(); track $index) {
+        <div class="faq-item" [attr.data-id]="item.type">
+          <button class="faq-question" dropdown>
+            <span>{{ item.question }}</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            {{ item.answer }}
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -25,13 +25,12 @@
       padding: 36px 28px;
       position: relative;
       overflow: hidden;
+      transition: all 0.2s;
 
       &:hover {
-        :hover {
-          transform: translateY(-5px);
-          box-shadow: 0 20px 50px -12px rgba(11, 61, 46, 0.18);
-          border-color: transparent;
-        }
+        transform: translateY(-5px);
+        box-shadow: 0 20px 50px -12px rgba(11, 61, 46, 0.18);
+        border-color: transparent;
       }
 
       &::before {

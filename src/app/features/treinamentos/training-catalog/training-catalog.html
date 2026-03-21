@@ -1,0 +1,155 @@
+<section class="section" id="catalogo">
+  <div class="container">
+    <div class="section-header">
+      <div class="overline">Catálogo Completo</div>
+      <h2>Nossos Cursos e Treinamentos <em>NR</em></h2>
+      <p>
+        Selecione uma categoria para filtrar. Todos os cursos incluem parte teórica e prática,
+        certificado individual e ART do engenheiro responsável.
+      </p>
+    </div>
+    <div class="filters" id="filters">
+      <button
+        class="fil"
+        data-cat="all"
+        [class.active]="selected() === 'ALL'"
+        (click)="handleTraining('ALL')"
+      >
+        Todos <span class="fil-ct" id="ctAll">43</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr05"
+        [class.active]="selected() === type.NR05"
+        (click)="handleTraining(type.NR05)"
+      >
+        <i class="fas fa-people-group"></i> NR-05 <span class="fil-ct">2</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr06"
+        [class.active]="selected() === type.NR06"
+        (click)="handleTraining(type.NR06)"
+      >
+        <i class="fas fa-hard-hat"></i> NR-06 <span class="fil-ct">1</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr10"
+        [class.active]="selected() === type.NR10"
+        (click)="handleTraining(type.NR10)"
+      >
+        <i class="fas fa-bolt"></i> NR-10 <span class="fil-ct">4</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr11"
+        [class.active]="selected() === type.NR11"
+        (click)="handleTraining(type.NR11)"
+      >
+        <i class="fas fa-truck-moving"></i> NR-11 <span class="fil-ct">7</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr12"
+        [class.active]="selected() === type.NR12"
+        (click)="handleTraining(type.NR12)"
+      >
+        <i class="fas fa-gears"></i> NR-12 <span class="fil-ct">2</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr13"
+        [class.active]="selected() === type.NR13"
+        (click)="handleTraining(type.NR13)"
+      >
+        <i class="fas fa-temperature-high"></i> NR-13 <span class="fil-ct">4</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr18"
+        [class.active]="selected() === type.NR18"
+        (click)="handleTraining(type.NR18)"
+      >
+        <i class="fas fa-helmet-safety"></i> NR-18 <span class="fil-ct">8</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr20"
+        [class.active]="selected() === type.NR20"
+        (click)="handleTraining(type.NR20)"
+      >
+        <i class="fas fa-fire-flame-curved"></i> NR-20 <span class="fil-ct">5</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr23"
+        [class.active]="selected() === type.NR23"
+        (click)="handleTraining(type.NR23)"
+      >
+        <i class="fas fa-fire-extinguisher"></i> NR-23 <span class="fil-ct">2</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr33"
+        [class.active]="selected() === type.NR33"
+        (click)="handleTraining(type.NR33)"
+      >
+        <i class="fas fa-dungeon"></i> NR-33 <span class="fil-ct">4</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="nr35"
+        [class.active]="selected() === type.NR35"
+        (click)="handleTraining(type.NR35)"
+      >
+        <i class="fas fa-mountain"></i> NR-35 <span class="fil-ct">2</span>
+      </button>
+      <button
+        class="fil"
+        data-cat="outros"
+        [class.active]="selected() === type.OUTROS"
+        (click)="handleTraining(type.OUTROS)"
+      >
+        <i class="fas fa-plus-circle"></i> Outros <span class="fil-ct">2</span>
+      </button>
+    </div>
+
+    <div class="cat-grid" id="catGrid">
+      @for (item of category(); track $index) {
+        <article
+          class="cc fi vis"
+          [style.--color]="item.color"
+          [style.--color-rgb]="getRgbColor(item.color)"
+        >
+          <div class="cc-top"></div>
+          <div class="cc-body">
+            <span class="cc-nr">{{ item.nr }}</span>
+            <h3>{{ item.title }}</h3>
+            <p class="cc-desc">
+              {{ item.description }}
+            </p>
+            <div class="cc-meta">
+              <span class="cc-tag">
+                <i class="fas fa-clock"></i>
+                {{ item.duration }}
+              </span>
+              @if (item.recurrence) {
+                <span class="cc-tag">
+                  <i class="fas" [ngClass]="item.tagIcon || 'fa-sync'"></i>
+                  {{ item.recurrence }}
+                </span>
+              }
+            </div>
+          </div>
+
+          <div class="cc-foot">
+            <span class="cc-ch" [style.color]="item.color">
+              {{ item.duration }}
+            </span>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

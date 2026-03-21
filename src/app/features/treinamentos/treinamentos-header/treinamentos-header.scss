@@ -1,0 +1,99 @@
+.hero {
+  background: linear-gradient(155deg, #011a13 0%, var(--gb-brand-primary-500) 35%, var(--gb-brand-primary-600) 65%, var(--gb-brand-primary-700) 100%);
+  color: var(--gb-surface-body);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M30 0v60M0 30h60' stroke='rgba(255,255,255,0.02)' stroke-width='1'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background: radial-gradient(ellipse at 70% 50%, rgba(212, 160, 23, .06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .ctn {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(16, 120, 185, 0.12);
+        border: 1px solid rgba(16, 100, 185, 0.25);
+        color: var(--gb-brand-primary-400);
+        padding: 7px 18px;
+        border-radius: 50px;
+        font-size: .78rem;
+        font-weight: 700;
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    margin-bottom: 18px;
+    font-weight: 900;
+
+    em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--gb-brand-secondary-400), var(--gb-brand-secondary-500));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  .hero-desc {
+    font-size: 1.05rem;
+    opacity: .88;
+    line-height: 1.9;
+    margin-bottom: 30px;
+  }
+
+  .hero-kws {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+
+    .hero-kw {
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: .72rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      color: rgba(255, 255, 255, .85);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+}

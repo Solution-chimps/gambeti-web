@@ -68,7 +68,9 @@ button {
     color: var(--gb-brand-primary-700);
     margin-bottom: 14px;
 
+    em,
     strong {
+      font-style: normal;
       color: var(--gb-brand-secondary-500);
     }
   }
@@ -79,6 +81,66 @@ button {
     max-width: 650px;
     margin: 0 auto;
   }
+}
+
+.s-green {
+  background: rgba(var(--green-rgb), .1);
+  color: var(--green);
+}
+
+.s-blue {
+  background: rgba(var(--blue-rgb), .1);
+  color: var(--blue);
+}
+
+.s-amber {
+  background: rgba(var(--amber-rgb), .1);
+  color: var(--amber);
+}
+
+.s-fire {
+  background: rgba(var(--fire-rgb), .1);
+  color: var(--fire);
+}
+
+.s-ember {
+  background: rgba(var(--ember-rgb), .1);
+  color: var(--ember);
+}
+
+.s-purple {
+  background: rgba(var(--purple-rgb), .1);
+  color: var(--purple);
+}
+
+.s-cyan {
+  background: rgba(var(--cyan-rgb), .1);
+  color: var(--cyan);
+}
+
+.s-indigo {
+  background: rgba(var(--indigo-rgb), .1);
+  color: var(--indigo);
+}
+
+.s-rose {
+  background: rgba(var(--rose-rgb), .1);
+  color: var(--rose);
+}
+
+.s-teal {
+  background: rgba(var(--teal-rgb), .1);
+  color: var(--teal);
+}
+
+.s-sky {
+  background: rgba(var(--sky-rgb), .1);
+  color: var(--sky);
+}
+
+.s-yellow {
+  background: rgba(var(--yellow-rgb), .1);
+  color: #a16207;
 }
 
 .btn {
