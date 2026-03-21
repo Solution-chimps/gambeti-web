@@ -1,0 +1,81 @@
+@use 'breakpoints'as *;
+
+:host {
+  section {
+    padding: 100px 0;
+    background: var(--light);
+
+    .obrig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+
+      .obrig-info {
+        h3 {
+          font-size: 1.5rem;
+          color: var(--gb-brand-primary-700);
+          margin-bottom: 16px;
+
+          strong {
+            color: var(--gb-feedback-danger-600);
+            font-weight: bolder;
+          }
+        }
+
+        >p {
+          color: var(--gb-gray-500);
+          font-size: 0.95rem;
+          line-height: 1.85;
+          margin-bottom: 22px;
+        }
+      }
+
+      .obrig-visual {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+
+        @include tablet {
+          grid-template-columns: 1fr;
+        }
+
+        .obrig-card {
+          background: var(--gb-surface-body);
+          border: 2px solid var(--gb-gray-300);
+          border-radius: 14px;
+          padding: 24px 18px;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+          &:hover {
+            border-color: var(--ember);
+            box-shadow: var(--shadow);
+            transform: translateY(-3px);
+          }
+
+          i {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            display: block;
+          }
+
+          h4 {
+            font-size: 0.88rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+          }
+
+          p {
+            color: var(--gray);
+            font-size: 0.78rem;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}

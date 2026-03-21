@@ -20,7 +20,6 @@ export class Nr20Laudo {
   public readonly tabs = signal<Tab<TabGenericComponent>[]>([]);
 
 
-
   public readonly redirectMessage = output<ContactKey>();
 
   constructor() {

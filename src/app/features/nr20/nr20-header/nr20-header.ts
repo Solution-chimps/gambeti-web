@@ -9,5 +9,4 @@ import { AutoScrollDirective } from '../../../shared/directives/auto-scroll/auto
   styleUrl: './nr20-header.scss',
 })
 export class Nr20Header {
-
 }

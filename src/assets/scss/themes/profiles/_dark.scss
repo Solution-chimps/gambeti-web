@@ -3,5 +3,34 @@
 $tokens: $dark-tokens;
 
 .dark {
-  @include generate-css-vars($tokens)
+  @include generate-css-vars($tokens);
+  --primary: var(--gb-brand-primary-700);
+  --primary-dark: var(--gb-brand-primary-800);
+  --accent: #D4A017;
+  --accent-light: #e6b82a;
+  --white: #FFFFFF;
+  --light: #F7F9F8;
+  --cream: #FFFDF5;
+  --text: #1A2E25;
+  --gray: #64748b;
+  --gray-light: #94a3b8;
+  --border: #e2e8f0;
+  --fire: #dc2626;
+  --fire-light: #ef4444;
+  --fire-dark: #991b1b;
+  --ember: #f97316;
+  --ember-light: #fb923c;
+  --amber: #d97706;
+  --amber-light: #f59e0b;
+  --yellow: #eab308;
+  --yellow-light: #fbbf24;
+  --blue: #2563eb;
+  --blue-light: #3b82f6;
+  --green: #10b981;
+  --red: #ef4444;
+  --purple: #8b5cf6;
+  --cyan: #06b6d4;
+  --indigo: #6366f1;
+  --pink: #ec4899;
+
 }

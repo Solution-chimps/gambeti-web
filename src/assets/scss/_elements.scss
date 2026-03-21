@@ -280,29 +280,6 @@ h6 {
         margin-bottom: 22px;
       }
 
-      .svc-features {
-        list-style: none;
-        margin-bottom: 28px;
-
-        li {
-          display: flex;
-          align-items: flex-start;
-          gap: 12px;
-          padding: 10px 0;
-          font-size: 0.92rem;
-          color: var(--gb-brand-primary-700);
-          font-weight: 500;
-          border-bottom: 1px solid var(--gb-gray-200);
-
-          i {
-            color: var(--accent-color, var(--gb-brand-secondary-500));
-            margin-top: 3px;
-            flex-shrink: 0;
-            width: 18px;
-            text-align: center;
-          }
-        }
-      }
     }
 
     .svc-detail-cards {
@@ -474,6 +451,30 @@ h6 {
       }
     }
 
+  }
+}
+
+.svc-features {
+  list-style: none;
+  margin-bottom: 28px;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 0.92rem;
+    color: var(--gb-brand-primary-700);
+    font-weight: 500;
+    border-bottom: 1px solid var(--gb-gray-200);
+
+    i {
+      color: var(--accent-color, var(--gb-brand-secondary-500));
+      margin-top: 3px;
+      flex-shrink: 0;
+      width: 18px;
+      text-align: center;
+    }
   }
 }
 
