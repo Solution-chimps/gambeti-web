@@ -110,7 +110,15 @@
               {{ service.description }}
             </p>
 
-            <span class="svc-card-link" [routerLink]="service.routerLink"> Ver detalhes <i class="fas fa-arrow-right"></i> </span>
+            @if (service.routerLink) {
+              <span class="svc-card-link" [routerLink]="service.routerLink">
+                Ver detalhes <i class="fas fa-arrow-right"></i>
+              </span>
+            } @else if (service.href) {
+              <span class="svc-card-link" (click)="handleNavigate(service.href)">
+                Ver detalhes <i class="fas fa-arrow-right"></i>
+              </span>
+            }
           </article>
         }
       </div>
@@ -210,5 +218,5 @@
       ><i class="fab fa-whatsapp"></i> Fale Conosco Agora</a
     >
   </section>
-  <gb-contact-order/>
+  <gb-contact-order />
 </main>

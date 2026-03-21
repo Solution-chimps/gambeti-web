@@ -27,4 +27,8 @@ export class Homepage {
   public readonly nrs = signal(NRS);
   public readonly faqs = signal(FAQS);
 
+  public handleNavigate(link: string): void {
+    window.open(link, '__blank')
+  }
+
 }

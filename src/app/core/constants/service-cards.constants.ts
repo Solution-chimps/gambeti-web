@@ -40,5 +40,12 @@ export const SERVICE_CARDS: ServiceCard[] = [
     description: `Gestão completa dos eventos obrigatórios de Saúde e Segurança do Trabalho no eSocial
     (S-2210, S-2220, S-2240), garantindo conformidade legal.`,
     routerLink: []
+  },
+  {
+    icon: 'fa-solid fa-book',
+    title: 'Plataforma EAD',
+    tag: 'EAD',
+    description: `Cursos online completos para capacitação em Segurança do Trabalho, com conteúdos atualizados, certificação válida e treinamentos obrigatórios conforme as Normas Regulamentadoras.`,
+    href: 'https://ead.gambeti.com.br/'
   }
 ];
