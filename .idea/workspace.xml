@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fda5456a-4930-40a1-9d3f-9a55f8819a2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/core/constants/about-checks.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/constants/diferentials.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/constants/faqs.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/constants/nr-ids.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/constants/sectors.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/constants/service-cards.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/enums/about-check.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/enums/differentials-id.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/enums/faq-id.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/enums/nr-id.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/enums/sector-id.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/interfaces/about-check.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/interfaces/differential.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/interfaces/faq-item.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/interfaces/nr-id.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/interfaces/sector-id.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/interfaces/service-card.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/components/contact-service/contact-service.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/components/contact-service/contact-service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/components/contact-service/contact-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/directives/auto-scroll/auto-scroll.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/pipes/pipe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/services/service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/core/pipes/pipe" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/contact-service/contact-service.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/core/services/service" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/directives/dropdown/dropdown.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/headerpage/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/headerpage/header/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/headerpage/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/headerpage/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/headerpage/header/header.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/headerpage/header/header.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/homepage/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/homepage/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/homepage/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/homepage/homepage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/homepage/homepage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/_elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/_elements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/_toastr.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/themes/generator/_theme_generator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/themes/generator/_theme_generator.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/themes/tokens/_dark-tokens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/themes/tokens/_dark-tokens.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +12,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
-        <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -79,7 +37,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Merging feat/header-component",
+    "git-widget-placeholder": "featÃ/page-nr",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/Luiz Eduardo Gambeti/Documents/Freela-site/gambeti-web",
@@ -90,6 +48,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Luiz Eduardo Gambeti\Documents\Freela-site\gambeti-web\src\app\features\nr10\nr10-checklist" />
+      <recent name="C:\Users\Luiz Eduardo Gambeti\Documents\Freela-site\gambeti-web\src\app\features\nr10\nr10-header" />
+      <recent name="C:\Users\Luiz Eduardo Gambeti\Documents\Freela-site\gambeti-web\src\app\features\nr10\nr10-obrigacoes" />
+      <recent name="C:\Users\Luiz Eduardo Gambeti\Documents\Freela-site\gambeti-web\src\app\features\nr10\nr10-PIE" />
+      <recent name="C:\Users\Luiz Eduardo Gambeti\Documents\Freela-site\gambeti-web\src\app\features\nr10\nr10-processo" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
