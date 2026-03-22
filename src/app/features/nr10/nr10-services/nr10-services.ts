@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SERVICES_LIST } from './constants/services.constants';
+import { SERVICES_CONTENT } from './constants/services-content.constants';
 
 @Component({
   selector: 'app-nr10-services',
@@ -9,19 +11,19 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./nr10-services.scss']
 })
 export class Nr10ServicesComponent {
-  activeTab: string = 'laudo5410';
+  // Importa a lista de serviços das constants
+  servicesList = SERVICES_LIST;
 
-  setActiveTab(tabId: string) {
-    this.activeTab = tabId;
+  // Serviço atualmente selecionado
+  selectedService: string = 'laudo-eletrico';
+
+  constructor() {}
+
+  selectService(serviceId: string): void {
+    this.selectedService = serviceId;
   }
 
-  scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
+  getCurrentContent() {
+    return SERVICES_CONTENT[this.selectedService];
   }
 }
