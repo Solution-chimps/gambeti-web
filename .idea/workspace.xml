@@ -3,34 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fda5456a-4930-40a1-9d3f-9a55f8819a2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/core/constants/service-cards.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/constants/service-cards.constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-PIE/nr10-pie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-checklist/nr10-checklist.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-header/nr10-header.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-prontuario/nr10-prontuario.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-services/nr10-services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-sobre/nr10-sobre/nr10-sobre.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,25 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "featÃ/page-nr",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "C:/Users/Luiz Eduardo Gambeti/Documents/Freela-site/gambeti-web",
-    "list.type.of.created.stylesheet": "SCSS",
-    "nodejs_package_manager_path": "npm",
-    "npm.Angular CLI Server.executor": "Run",
-    "ts.external.directory.path": "C:\\Users\\Luiz Eduardo Gambeti\\Documents\\Freela-site\\gambeti-web\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;featÃ/page-nr&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Luiz Eduardo Gambeti/Documents/Freela-site/gambeti-web&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Angular CLI Server.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Luiz Eduardo Gambeti\\Documents\\Freela-site\\gambeti-web\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Luiz Eduardo Gambeti\Documents\Freela-site\gambeti-web\src\app\features\nr10\nr10-checklist" />
@@ -117,6 +95,7 @@
       <updated>1773443028832</updated>
       <workItem from="1773443037401" duration="13053000" />
       <workItem from="1773507167457" duration="17994000" />
+      <workItem from="1774188619157" duration="2356000" />
     </task>
     <servers />
   </component>

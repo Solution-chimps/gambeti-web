@@ -181,7 +181,7 @@ body {
   right: 28px;
   width: 42px;
   height: 42px;
-  background: var(--blue);
+  background: var(--gb-brand-primary-500);
   color: var(--white);
   border-radius: 10px;
   display: flex;
@@ -201,7 +201,7 @@ body {
   }
 
   &:hover {
-    background: var(--blue-dark);
+    background: var(--gb-brand-secondary-500);
   }
 }
 

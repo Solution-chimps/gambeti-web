@@ -8,6 +8,7 @@ import {Nr10ProcessoComponent} from './nr10-processo/nr10-processo';
 import {Nr10ObrigacoesComponent} from './nr10-obrigacoes/nr10-obrigacoes';
 import {Nr10ChecklistComponent} from './nr10-checklist/nr10-checklist';
 import {Nr10SobreComponent} from './nr10-sobre/nr10-sobre/nr10-sobre';
+import {HeaderComponent} from '../headerpage/header/header';
 
 // Import all child components
 
@@ -24,7 +25,8 @@ import {Nr10SobreComponent} from './nr10-sobre/nr10-sobre/nr10-sobre';
     Nr10ProcessoComponent,
     Nr10ObrigacoesComponent,
     Nr10ChecklistComponent,
-    Nr10SobreComponent
+    Nr10SobreComponent,
+    HeaderComponent
   ],
   templateUrl: './nr10.html',
   styleUrls: ['./nr10.scss']
