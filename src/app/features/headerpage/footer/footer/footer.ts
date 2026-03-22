@@ -19,4 +19,8 @@ export class FooterComponent {
   public handleOrder(): void {
     this.contactService.dispatchUpdateContactData('CONTATO_GERAL')
   }
+
+  public handleNavigate(link: string): void {
+    window.open(link, '__blank')
+  }
 }

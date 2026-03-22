@@ -18,6 +18,8 @@
         @for (item of menuItems; track $index) {
           <li class="nav-item">
             <a
+            [routerLink]="['/']"
+            [delay]="100"
               [autoScrollTo]="item.link"
               class="nav-link"
               [class.active]="activeSection === item.link"
