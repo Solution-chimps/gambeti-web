@@ -15,7 +15,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     tag: 'NR10',
     description: `Soluções completas em segurança de instalações elétricas conforme NR10 e normas ABNT.
     Laudos elétricos, projetos de adequação, inspeções e prontuários técnicos.`,
-    routerLink: []
+    routerLink: ['/nr10']
   },
   {
     icon: 'fas fa-droplet',

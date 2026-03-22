@@ -1,0 +1,133 @@
+.pie-section {
+  background: var(--cream, #F5F8FF);
+}
+
+.pie-hero-box {
+  background: var(--white);
+  border: 2px solid var(--border, #e2e8f0);
+  border-radius: 24px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  box-shadow: var(--shadow);
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    padding: 35px;
+  }
+}
+
+.pie-hero-info {
+  h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 14px;
+
+    strong {
+      color: var(--blue);
+    }
+  }
+
+  p {
+    color: var(--gray);
+    line-height: 1.85;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+}
+
+.pie-legal {
+  background: linear-gradient(135deg, #fef2f2, #fff7ed);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 16px;
+
+  h4 {
+    color: var(--red);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  p {
+    color: var(--gray);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+}
+
+.pie-components {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pie-comp {
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left-width: 4px;
+  border-left-style: solid;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  h4 {
+    font-size: 0.88rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+
+    i {
+      font-size: 0.85rem;
+    }
+  }
+
+  p {
+    font-size: 0.78rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #4b5563;
+  }
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+
+  &-norma {
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+  }
+
+  &-obrig {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+  }
+
+  &-doc {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+  }
+}

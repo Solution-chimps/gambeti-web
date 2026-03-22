@@ -1,0 +1,376 @@
+.services-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #1a2a4f;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.services-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 60px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    border-radius: 20px;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .tab-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    color: #495057;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+
+    @media (max-width: 768px) {
+      background: white;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    &:hover {
+      color: #ff6b35;
+      background: rgba(255, 107, 53, 0.1);
+    }
+
+    &.active {
+      background: #ff6b35;
+      color: white;
+      box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    }
+  }
+}
+
+.service-content {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  .service-title {
+    font-size: 2rem;
+    color: #1a2a4f;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #ff6b35;
+    padding-left: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .service-description {
+    color: #495057;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    // Estilos para os textos destacados
+    strong {
+      font-weight: 700;
+    }
+
+    // Destaque para "documento técnico"
+    .doc-text {
+      color: #2563eb;
+      font-weight: 700;
+      background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(135deg, #2563eb, #3b82f6);
+        border-radius: 2px;
+      }
+    }
+
+    // Destaque para "elaborado por profissional legalmente habilitado"
+    .plh-text {
+      color: #8b5cf6;
+      font-weight: 700;
+      background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+        border-radius: 2px;
+      }
+    }
+
+    // Destaque para "aspectos de segurança"
+    .security-text {
+      color: #10b981;
+      font-weight: 700;
+      background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(135deg, #10b981, #34d399);
+        border-radius: 2px;
+      }
+    }
+
+    // Destaque para o texto obrigatório (laranja)
+    .obrigatory-text {
+      color: #ff6b35;
+      font-weight: 800;
+      font-size: 1.05rem;
+      background: linear-gradient(135deg, #ff6b35 0%, #ff8255 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      padding: 0.25rem 0;
+      border-left: 3px solid #ff6b35;
+      padding-left: 1rem;
+      margin: 0.5rem 0;
+
+      &::before {
+        content: '⚠️ ';
+        font-size: 1rem;
+        background: none;
+        -webkit-text-fill-color: initial;
+        color: #ff6b35;
+      }
+    }
+
+    // Destaque para texto em geral com gradiente
+    .highlight-text {
+      color: #1a2a4f;
+      font-weight: 800;
+      background: linear-gradient(135deg, #1a2a4f 0%, #2c3e66 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.checklist-section {
+  margin-bottom: 2.5rem;
+
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .checklist-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #fff5f0;
+      transform: translateX(5px);
+    }
+
+    .checklist-icon {
+      width: 28px;
+      height: 28px;
+      background: #ff6b35;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .checklist-content {
+      flex: 1;
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1a2a4f;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: #6c757d;
+        line-height: 1.5;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: #1a2a4f;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .info-tag {
+    display: inline-block;
+    background: #ff6b35;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    &.warning {
+      background: #ffc107;
+      color: #333;
+    }
+
+    &.highlight {
+      background: #28a745;
+    }
+  }
+
+  .info-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    .tag {
+      background: #e9ecef;
+      color: #495057;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+
+      &:hover {
+        background: #ff6b35;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.budget-button {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e9ecef;
+
+  .btn-budget {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8255 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+    }
+  }
+}

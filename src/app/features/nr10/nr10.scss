@@ -1,0 +1,219 @@
+:root {
+  --primary: #0B3D2E;
+  --primary-dark: #072a1e;
+  --accent: #D4A017;
+  --accent-light: #e6b82a;
+  --white: #FFFFFF;
+  --light: #F7F9F8;
+  --text: #1A2E25;
+  --gray: #64748b;
+  --blue: #2563eb;
+  --blue-light: #3b82f6;
+  --yellow: #eab308;
+  --red: #ef4444;
+  --green: #10b981;
+  --purple: #8b5cf6;
+  --cyan: #06b6d4;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0 4px 20px -4px rgba(11, 61, 46, 0.12);
+  --shadow-lg: 0 20px 50px -12px rgba(11, 61, 46, 0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  background: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+// BUTTONS GLOBAIS
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, var(--blue), var(--blue-light));
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  transition: var(--transition);
+  gap: 10px;
+  font-size: 0.88rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
+  }
+}
+
+.btn-yellow {
+  background: linear-gradient(135deg, var(--yellow), #facc15);
+  color: #1a1a00;
+
+  &:hover {
+    box-shadow: 0 8px 25px rgba(234, 179, 8, 0.35);
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  color: var(--white);
+
+  &:hover {
+    border-color: var(--blue-light);
+    color: var(--blue-light);
+    background: rgba(37, 99, 235, 0.08);
+  }
+}
+
+.btn-sm {
+  padding: 12px 24px;
+  font-size: 0.82rem;
+}
+
+// SECTION HEADER GLOBAL
+.section-header {
+  text-align: center;
+  margin-bottom: 55px;
+
+  .overline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue);
+    font-weight: 800;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 30px;
+      height: 2px;
+      background: var(--blue);
+      border-radius: 2px;
+    }
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    color: var(--primary);
+    margin-bottom: 14px;
+
+    strong {
+      color: var(--blue);
+    }
+  }
+
+  p {
+    color: var(--gray);
+    font-size: 1.02rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+// FADE IN ANIMATION
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// FLOATING BUTTONS
+.wpp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: var(--transition);
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 95px;
+  right: 28px;
+  width: 42px;
+  height: 42px;
+  background: var(--gb-brand-primary-500);
+  color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  text-decoration: none;
+  cursor: pointer;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    background: var(--gb-brand-secondary-500);
+  }
+}
+
+// RESPONSIVE
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+}

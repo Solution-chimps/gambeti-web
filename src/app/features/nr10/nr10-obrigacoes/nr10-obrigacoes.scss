@@ -1,0 +1,154 @@
+.obrig-section {
+  background: var(--cream, #F5F8FF);
+  padding: 80px 0;
+}
+
+.obrig-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.obrig-visual {
+  background: linear-gradient(135deg, #991b1b, #b91c1c);
+  border-radius: 24px;
+  padding: 50px 40px;
+  color: var(--white);
+  text-align: center;
+
+  i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+.obrig-info {
+  h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+
+    strong {
+      color: var(--red);
+    }
+  }
+
+  p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.85;
+    margin-bottom: 22px;
+  }
+}
+
+.obrig-list {
+  list-style: none;
+  margin-bottom: 32px;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    font-size: 0.92rem;
+    color: var(--gb-brand-primary-500);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+
+    i {
+      color: var(--red);
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// Wrapper para o botão
+.btn-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+// Botão com vermelho suave
+.btn-regularizar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+
+  i {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #ef4444, #f87171);
+    box-shadow: 0 8px 20px rgba(220, 38, 38, 0.35);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .btn-regularizar {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-wrapper {
+    justify-content: center;
+  }
+
+  .obrig-visual {
+    padding: 40px 30px;
+
+    i {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+}

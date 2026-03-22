@@ -1,0 +1,67 @@
+<section class="services-section">
+  <div class="container">
+    <!-- Cabeçalho -->
+    <div class="services-header">
+      <h1>Laudos, Diagramas e Serviços Especializados</h1>
+      <p class="subtitle">
+        Selecione o serviço para conhecer os detalhes de cada componente do Prontuário das Instalações Elétricas
+      </p>
+    </div>
+
+    <!-- Menu de Serviços (Tabs) -->
+    <div class="services-tabs">
+      <button
+        *ngFor="let service of servicesList"
+        class="tab-btn"
+        [class.active]="selectedService === service.id"
+        (click)="selectService(service.id)">
+        {{ service.name }}
+      </button>
+    </div>
+
+    <!-- Conteúdo do Serviço Selecionado -->
+    <div class="service-content" *ngIf="getCurrentContent() as content">
+      <h2 class="service-title">{{ content.title }}</h2>
+
+      <!-- Descrição com HTML dinâmico -->
+      <div class="service-description">
+        <p [innerHTML]="content.description"></p>
+        <p *ngIf="content.description2" [innerHTML]="content.description2"></p>
+      </div>
+
+      <!-- Checklist -->
+      <div class="checklist-section" *ngIf="content.checklist">
+        <div class="checklist-grid">
+          <div class="checklist-item" *ngFor="let item of content.checklist">
+            <div class="checklist-icon">✓</div>
+            <div class="checklist-content">
+              <h4>{{ item.title }}</h4>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="info-grid" *ngIf="content.infoCards">
+        <div class="info-card" *ngFor="let card of content.infoCards">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.content }}</p>
+          <div class="info-tag" *ngIf="card.tag" [class.warning]="card.tagType === 'warning'" [class.highlight]="card.tagType === 'highlight'">
+            {{ card.tag }}
+          </div>
+          <div class="info-tags" *ngIf="card.tags">
+            <span class="tag" *ngFor="let tag of card.tags">{{ tag }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botão Orçamento -->
+      <div class="budget-button">
+        <a class="btn-budget">
+          ORÇAMENTO — {{ content.title }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
