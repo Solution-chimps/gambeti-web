@@ -73,25 +73,26 @@
 }
 
 .pie-comp {
-  background: var(--light, #F7F9F8);
-  border: 1px solid var(--border, #e2e8f0);
-  border-radius: 12px;
   padding: 20px;
-  transition: var(--transition);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left-width: 4px;
+  border-left-style: solid;
 
   &:hover {
-    box-shadow: var(--shadow);
-    border-color: rgba(37, 99, 235, 0.25);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   }
 
   h4 {
     font-size: 0.88rem;
-    color: var(--primary);
     margin-bottom: 5px;
     display: flex;
     align-items: center;
     gap: 8px;
+    font-weight: 700;
 
     i {
       font-size: 0.85rem;
@@ -99,10 +100,10 @@
   }
 
   p {
-    color: var(--gray);
     font-size: 0.78rem;
     line-height: 1.6;
     margin-bottom: 8px;
+    color: #4b5563;
   }
 }
 
@@ -113,19 +114,20 @@
   border-radius: 50px;
   font-size: 0.68rem;
   font-weight: 700;
-
-  &-obrig {
-    background: rgba(239, 68, 68, 0.1);
-    color: var(--red);
-  }
+  border: 1px solid transparent;
 
   &-norma {
     background: rgba(37, 99, 235, 0.1);
-    color: var(--blue);
+    color: #2563eb;
+  }
+
+  &-obrig {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
   }
 
   &-doc {
     background: rgba(139, 92, 246, 0.1);
-    color: var(--purple);
+    color: #8b5cf6;
   }
 }

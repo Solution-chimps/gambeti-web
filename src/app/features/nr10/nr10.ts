@@ -3,14 +3,12 @@ import { CommonModule } from '@angular/common';
 import {Nr10HeaderComponent} from './nr10-header/nr10-header';
 import {Nr10ProntuarioComponent} from './nr10-prontuario/nr10-prontuario';
 import {Nr10PieComponent} from './nr10-PIE/nr10-pie';
-import {Nr10ServicesComponent} from './nr10-services/nr10-services';
 import {Nr10ProcessoComponent} from './nr10-processo/nr10-processo';
 import {Nr10ObrigacoesComponent} from './nr10-obrigacoes/nr10-obrigacoes';
 import {Nr10ChecklistComponent} from './nr10-checklist/nr10-checklist';
 import {Nr10SobreComponent} from './nr10-sobre/nr10-sobre/nr10-sobre';
 import {HeaderComponent} from '../headerpage/header/header';
-
-// Import all child components
+import {Nr10ServicesComponent} from './nr10-services/nr10-services';
 
 
 @Component({

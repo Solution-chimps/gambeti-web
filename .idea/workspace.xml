@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fda5456a-4930-40a1-9d3f-9a55f8819a2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/headerpage/footer/footer/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-obrigacoes/nr10-obrigacoes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10-processo/nr10-processo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/features/nr10/nr10.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/nr10/nr10.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,8 @@
       <updated>1773443028832</updated>
       <workItem from="1773443037401" duration="13053000" />
       <workItem from="1773507167457" duration="17994000" />
-      <workItem from="1774188619157" duration="2356000" />
+      <workItem from="1774188619157" duration="2713000" />
+      <workItem from="1774201776000" duration="5975000" />
     </task>
     <servers />
   </component>
