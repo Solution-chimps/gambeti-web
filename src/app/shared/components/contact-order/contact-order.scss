@@ -108,6 +108,11 @@
             background: rgba(212, 160, 23, 0.2);
             color: var(--gb-brand-secondary-500);
           }
+
+          &.register {
+            background: rgba(139, 92, 246, .1);
+            color: var(--purple);
+          }
         }
 
         .quote-option-info {
