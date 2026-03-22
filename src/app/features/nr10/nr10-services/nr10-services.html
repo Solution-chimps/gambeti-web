@@ -1,0 +1,33 @@
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-header">
+      <div class="overline">Componentes do PIE</div>
+      <h2>Laudos, Diagramas e <strong>Serviços Especializados</strong></h2>
+      <p>Selecione o serviço para conhecer os detalhes de cada componente</p>
+    </div>
+
+    <div class="tabs-nav">
+      <button class="tab-btn" [class.active]="activeTab === 'laudo5410'" (click)="setActiveTab('laudo5410')">
+        <i class="fas fa-file-shield"></i> Laudo Elétrico
+      </button>
+      <button class="tab-btn" [class.active]="activeTab === 'spda'" (click)="setActiveTab('spda')">
+        <i class="fas fa-cloud-bolt"></i> Laudo SPDA
+      </button>
+      <button class="tab-btn" [class.active]="activeTab === 'termografia'" (click)="setActiveTab('termografia')">
+        <i class="fas fa-temperature-high"></i> Termografia
+      </button>
+    </div>
+
+    <div class="tab-content" [class.active]="activeTab === 'laudo5410'">
+      <div class="svc-detail">
+        <div class="svc-info">
+          <h3><i class="fas fa-file-shield"></i> Laudo das Instalações Elétricas</h3>
+          <p>O <strong>Laudo das Instalações Elétricas de Baixa Tensão</strong> é o documento técnico que atesta a conformidade das instalações elétricas com a <strong>ABNT NBR 5410:2004</strong>.</p>
+          <a class="btn btn-sm" (click)="scrollToSection('orcamento'); $event.preventDefault()">
+            <i class="fas fa-file-invoice"></i> ORÇAMENTO — LAUDO NBR 5410
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

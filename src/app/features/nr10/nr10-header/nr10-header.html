@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <a class="logo-wrapper" (click)="scrollToSection('home'); $event.preventDefault()">
+        <div class="logo-icon">GE</div>
+        <div>
+          <span>Gambeti Engenharia</span>
+          <small>Segurança do Trabalho</small>
+        </div>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links" [class.mobile-open]="isMobileMenuOpen">
+          <li><a (click)="scrollToSection('pie'); $event.preventDefault()">PIE — Prontuário</a></li>
+          <li><a (click)="scrollToSection('servicos'); $event.preventDefault()">Serviços</a></li>
+          <li><a (click)="scrollToSection('obrigatoriedade'); $event.preventDefault()">Obrigatoriedade</a></li>
+          <li><a (click)="scrollToSection('orcamento'); $event.preventDefault()">Orçamento</a></li>
+          <li><a (click)="scrollToSection('faq'); $event.preventDefault()">FAQ</a></li>
+        </ul>
+        <div class="crea-tag">
+          <i class="fas fa-stamp"></i> CREA 2475417-SP
+        </div>
+        <button class="mobile-menu-btn" (click)="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
