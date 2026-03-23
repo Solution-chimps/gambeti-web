@@ -1,0 +1,77 @@
+@use 'breakpoints'as *;
+
+.esocial {
+  background: linear-gradient(135deg, #1e3a5f, #0f2744);
+  color: var(--gb-surface-body);
+  padding: 80px 0;
+  overflow: hidden;
+
+  .es-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+
+    @include max-desktop {
+      grid-template-columns: 1fr 1fr;
+
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    .es-card {
+      background: rgba(var(--gb-surface-body-rgb), .05);
+      border: 1px solid rgba(var(--gb-surface-body-rgb), .1);
+      border-radius: 16px;
+      padding: 28px 24px;
+      transition: all .3s cubic-bezier(.4, 0, .2, 1);
+      position: relative;
+      overflow: hidden;
+
+      .es-ic {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+      }
+
+      .es-code {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: .7rem;
+        color: var(--accent);
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+      }
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-size: .84rem;
+        line-height: 1.75;
+        opacity: .75;
+      }
+
+      .es-prazo {
+        margin-top: 12px;
+        padding: 6px 14px;
+        border-radius: 8px;
+        font-size: .72rem;
+        font-weight: 800;
+        font-family: 'Montserrat';
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+  }
+}

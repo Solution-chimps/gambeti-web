@@ -39,7 +39,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     tag: 'eSocial SST',
     description: `Gestão completa dos eventos obrigatórios de Saúde e Segurança do Trabalho no eSocial
     (S-2210, S-2220, S-2240), garantindo conformidade legal.`,
-    routerLink: []
+    routerLink: ['/sst']
   },
   {
     icon: 'fa-solid fa-book',

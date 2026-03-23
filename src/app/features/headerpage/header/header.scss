@@ -7,7 +7,7 @@
   background: #0a1628f2;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(var(--gb-surface-body-rgb), 0.05);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
@@ -91,7 +91,7 @@
   }
 
   .nav-link {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(var(--gb-surface-body-rgb), 0.8);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 0.8rem;
@@ -104,7 +104,7 @@
 
     &:hover {
       color: #D4A63F;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(var(--gb-surface-body-rgb), 0.1);
     }
 
     &.active {
@@ -240,7 +240,7 @@
     display: block;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(var(--gb-surface-body-rgb), 0.1);
     cursor: pointer;
 
     &:hover {

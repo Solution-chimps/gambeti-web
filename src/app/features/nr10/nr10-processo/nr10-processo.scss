@@ -20,8 +20,8 @@
 }
 
 .timeline-step {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(var(--gb-surface-body-rgb), 0.04);
+  border: 1px solid rgba(var(--gb-surface-body-rgb), 0.08);
   border-radius: 16px;
   padding: 28px 20px;
   text-align: center;
@@ -29,7 +29,7 @@
   transition: var(--transition);
 
   &:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(var(--gb-surface-body-rgb), 0.08);
     transform: translateY(-4px);
   }
 }

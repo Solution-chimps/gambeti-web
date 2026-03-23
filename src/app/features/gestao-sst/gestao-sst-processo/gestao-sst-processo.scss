@@ -1,0 +1,64 @@
+@use 'breakpoints'as *;
+
+.proc-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+
+  @include max-desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+
+  }
+
+  .proc-step {
+    text-align: center;
+    position: relative;
+    padding: 28px 14px;
+
+    .proc-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--gb-surface-body);
+      font-family: 'Montserrat';
+      font-weight: 900;
+      font-size: .8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+    }
+
+    .proc-ic {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin: 0 auto 12px;
+    }
+
+    h4 {
+      font-size: .86rem;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-size: .78rem;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+  }
+}

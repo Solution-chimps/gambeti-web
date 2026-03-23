@@ -1,0 +1,68 @@
+.comp-sec {
+  background: var(--cream);
+
+  .comp-tbl-w {
+    overflow-x: auto;
+
+    .comp-tbl {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--gb-surface-body);
+      border: 2px solid var(--gb-gray-200);
+      border-radius: 14px;
+      overflow: hidden;
+      min-width: 900px;
+
+      .obr {
+        color: var(--fire);
+        font-weight: 800;
+        font-size: .76rem;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-size: .64rem;
+        font-weight: 800;
+        font-family: 'Montserrat';
+      }
+
+
+      .rec {
+        color: var(--amber);
+        font-weight: 700;
+        font-size: .76rem;
+      }
+
+      thead th {
+        background: var(--primary);
+        color: var(--gb-surface-body);
+        padding: 14px 12px;
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: .7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+
+      tbody {
+        tr:nth-child(even) {
+          background: var(--light);
+        }
+
+        td {
+          padding: 12px 12px;
+          font-size: .82rem;
+          border-bottom: 1px solid var(--gb-gray-200);
+          font-weight: 500;
+          vertical-align: top;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+}

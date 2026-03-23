@@ -29,8 +29,8 @@
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      background: rgba(255, 255, 255, .04);
-      border: 1px solid rgba(255, 255, 255, .1);
+      background: rgba(var(--gb-surface-body-rgb), .04);
+      border: 1px solid rgba(var(--gb-surface-body-rgb), .1);
       border-radius: 14px;
       overflow: hidden;
       min-width: 940px;
@@ -50,7 +50,7 @@
       }
 
       thead th {
-        background: rgba(255, 255, 255, .08);
+        background: rgba(var(--gb-surface-body-rgb), .08);
         padding: 14px 12px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
@@ -58,13 +58,13 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid rgba(var(--gb-surface-body-rgb), .1);
       }
 
       tbody td {
         padding: 12px;
         font-size: .82rem;
-        border-bottom: 1px solid rgba(255, 255, 255, .05);
+        border-bottom: 1px solid rgba(var(--gb-surface-body-rgb), .05);
         font-weight: 500;
         vertical-align: top;
       }

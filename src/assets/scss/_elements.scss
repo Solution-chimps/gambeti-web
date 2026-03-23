@@ -59,6 +59,25 @@ button {
   @extend .btn;
 }
 
+.new-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, var(--fire), var(--ember));
+  color: var(--gb-surface-body);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: .58rem;
+  font-weight: 800;
+  font-family: 'Montserrat';
+  letter-spacing: .5px;
+  vertical-align: middle;
+}
+
+section:has(.section-header) {
+  padding: 100px 0px;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 55px;
@@ -70,7 +89,9 @@ button {
 
     em,
     strong {
+      font-family: "Montserrat", sans-serif;
       font-style: normal;
+      font-weight: bolder;
       color: var(--gb-brand-secondary-500);
     }
   }
@@ -255,7 +276,7 @@ button {
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 

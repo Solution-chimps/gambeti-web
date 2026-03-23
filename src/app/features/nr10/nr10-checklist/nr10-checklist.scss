@@ -42,7 +42,7 @@
     align-items: flex-start;
     gap: 12px;
     padding: 10px 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(var(--gb-surface-body-rgb), 0.9);
     font-size: 0.92rem;
     font-weight: 500;
 
@@ -65,14 +65,14 @@
 }
 
 .checklist-doc {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(var(--gb-surface-body-rgb), 0.05);
+  border: 1px solid rgba(var(--gb-surface-body-rgb), 0.1);
   border-radius: 12px;
   padding: 20px 18px;
   transition: var(--transition);
 
   &:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(var(--gb-surface-body-rgb), 0.08);
     transform: translateY(-3px);
   }
 

@@ -228,6 +228,36 @@ Quantidade de áreas:
 Empresa:
 CNPJ:
 Contato:`
+  },
+  GESTAO_SST: {
+    whatsapp: 'Olá, gostaria de solicitar um orçamento para Gestão de SST (Segurança e Saúde do Trabalho).',
+    email: `Olá, gostaria de solicitar um orçamento para Gestão de SST:
+
+Nome Completo:
+Empresa:
+CNPJ:
+Nº de Funcionários:
+E-mail:
+Telefone / WhatsApp:
+Segmento / CNAE:
+Cidade / Estado:
+
+Serviços Desejados:
+- PGR (NR-01)
+- LTCAT
+- Insalubridade NR-15
+- Periculosidade NR-16
+- PCMSO NR-07
+- AET NR-17
+- PPP
+- eSocial SST
+- Ordem de Serviço
+- APR
+- Gestão EPI NR-06
+- Pacote Completo
+
+Observações:
+`
   }
 };
 

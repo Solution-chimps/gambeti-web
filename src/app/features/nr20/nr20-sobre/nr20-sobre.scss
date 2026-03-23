@@ -102,8 +102,8 @@
           gap: 12px;
 
           .intro-icon-item {
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(var(--gb-surface-body-rgb), 0.06);
+            border: 1px solid rgba(var(--gb-surface-body-rgb), 0.1);
             border-radius: 14px;
             padding: 22px 12px;
             text-align: center;
