@@ -15,14 +15,14 @@ export const GESTAO_SST_STATS: StatItem[] = [
   },
   {
     icon: 'fas fa-file-signature',
-    title: 'ART Inclusa',
+    title: 'Emissão de ART ',
     description: 'CREA 2475417-SP',
     color: 'var(--blue)',
   },
   {
     icon: 'fas fa-cloud-arrow-up',
     title: 'eSocial SST',
-    description: 'S-2210 / S-2220 / S-2240',
+    description: 'S-2210 / S-2220 / S-2221 / S-2240',
     color: 'var(--purple)',
   },
   {

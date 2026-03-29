@@ -39,7 +39,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
-    color: var(--gb-surface-base);
+    color: var(--gb-brand-secondary-500);
     letter-spacing: 2px;
 
     @media (max-width: 768px) {
@@ -48,7 +48,11 @@
   }
 
   .logo-destaque {
-    color: #D4A63F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--gb-surface-base);
+    letter-spacing: 2px;
   }
 
   .logo-subtitle {

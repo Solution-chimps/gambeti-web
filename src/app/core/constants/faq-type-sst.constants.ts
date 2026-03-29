@@ -8,6 +8,15 @@ export const FAQ_SST_TYPE: FaqTypeItem[] = [
     type: FaqTypeEnum.DOCUMENTACAO
   },
   {
+    question: 'O que mudou na NR-01 em 2025? ',
+    answer: 'Desde 26 de maio de 2025, as empresas são obrigadas a incluir os riscos psicossociais no \n' +
+      'PGR, conforme a Portaria MTE nº 1.419/2024. Fatores como assédio, sobrecarga, metas \n' +
+      'abusivas e jornadas exaustivas devem ser identificados, avaliados e controlados com \n' +
+      'medidas registradas no Plano de Ação. A fiscalização será orientativa até maio de 2026, \n' +
+      'mas a obrigação legal já está em vigor.',
+    type: FaqTypeEnum.DOCUMENTACAO
+  },
+  {
     question: 'Quais são os Anexos da NR-16 (Periculosidade)?',
     answer: 'A NR-16 possui anexos como Explosivos, Inflamáveis, Segurança Patrimonial, Energia Elétrica, Motocicleta, Agentes de Trânsito e Radiações Ionizantes, com adicional de 30% sobre o salário.',
     type: FaqTypeEnum.SEGURANCA

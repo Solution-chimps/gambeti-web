@@ -2,6 +2,7 @@ import { Directive, HostListener, input } from '@angular/core';
 import { take, timer } from 'rxjs';
 
 @Directive({
+  standalone: true,
   selector: '[autoScrollTo]'
 })
 export class AutoScrollDirective {

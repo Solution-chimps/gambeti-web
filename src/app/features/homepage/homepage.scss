@@ -63,7 +63,7 @@
       .main-content-wrapper {
         position: relative;
         z-index: 2;
-        max-width: 1200px;
+        max-width: 1300px;
         margin: 0 auto;
         width: 100%;
 
@@ -88,18 +88,19 @@
           }
         }
 
+
         h1 {
           font-size: clamp(2rem, 5vw, 3.4rem);
           font-weight: 900;
           line-height: 1.12;
           margin-bottom: 24px;
-          max-width: 720px;
+          max-width: 1500px;
         }
 
         span {
           color: rgba(var(--gb-brand-secondary-50-rgb), var(--gb-opacity, 0.7));
           font-size: clamp(1rem, 2vw, 1.15rem);
-          max-width: 580px;
+          max-width: none;
           margin-bottom: 40px;
           line-height: 1.85;
           display: block;
@@ -109,7 +110,7 @@
       >span:nth-of-type(2) {
         color: rgba(var(--gb-brand-secondary-50-rgb), var(--gb-opacity, 0.7));
         font-size: clamp(1rem, 2vw, 1.15rem);
-        max-width: 580px;
+        max-width: 800px;
         margin-bottom: 40px;
         line-height: 1.85;
         display: block;
@@ -322,7 +323,13 @@
         gap: 24px;
 
         @include tablet {
-          grid-template-columns: 1fr;
+          .main-content-wrapper h1 {
+            font-size: 2rem;
+          }
+
+          .main-content-wrapper h1 br {
+            display: none;
+          }
         }
 
         article.svc-card {
