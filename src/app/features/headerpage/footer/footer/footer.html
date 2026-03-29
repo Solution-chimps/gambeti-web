@@ -27,7 +27,14 @@
       <h3>CONTATO</h3>
       <ul>
         <li class="footer-column-sub" autoScrollTo="orcamento" (click)="handleOrder()">Solicitar Orçamento</li>
-        <li class="footer-column-sub">contato@gambeti.com.br</li>
+        <li class="footer-column-sub">
+          <a
+            [href]="buildEmailLink()"
+            class="quote-option"
+          >
+            comercial@gambeti.com.br
+          </a>
+        </li>
         <li class="footer-column-sub"> CREA Nº 2475417-SP</li>
       </ul>
     </div>

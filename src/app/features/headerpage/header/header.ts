@@ -61,7 +61,14 @@ export class HeaderComponent implements OnInit {
   }
 
   public handleOrder(): void {
-    this.contactService.dispatchUpdateContactData('CONTATO_GERAL')
+    const phone = '5511997742018';
+    const message = encodeURIComponent(
+      'Olá! Gostaria de solicitar um orçamento.'
+    );
+
+    const url = `https://wa.me/${phone}?text=${message}`;
+
+    window.open(url, '_blank');
   }
 
   public toggleMenu() {
